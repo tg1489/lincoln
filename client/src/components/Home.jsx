@@ -4,7 +4,6 @@ import school from '../assets/school2.png';
 import sign from '../assets/sign2.png';
 import bookfair from '../assets/bookfair.png';
 import funday from '../assets/funday.png';
-// import membership from '../assets/membership.png';
 import '../Home.css';
 
 export default function Home({ isMobile }) {

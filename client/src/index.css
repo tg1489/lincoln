@@ -70,7 +70,7 @@ button:focus-visible {
 }
 
 /* Fix header from displaying jumbled up letters */
-@media (max-width: 1228px) {
+@media (max-width: 1231px) {
   .nav-link {
     font-size: 15px;
   }
@@ -82,7 +82,7 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 1136px) {
+@media (max-width: 1139px) {
   .nav-link {
     font-size: 13px;
   }
@@ -94,7 +94,7 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1092px) {
   .nav-link {
     font-size: 12px;
   }
@@ -129,4 +129,3 @@ button:focus-visible {
   position: relative; /* Ensure relative positioning */
   margin-top: auto; /* Push the footer to the bottom */
 }
-
