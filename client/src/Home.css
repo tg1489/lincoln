@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/placard-condensed');
+@import url('https://fonts.cdnfonts.com/css/zidan');
+
+.main-picture {
+  height: 400px;
+  width: 300px;
+}
+
+.row-events {
+  align-items: flex-start;
+}
+
+.mobile-columns {
+  flex-direction: column !important;
+}
+
+h2.title {
+  /* font-family: 'Placard Condensed', sans-serif; */
+  font-family: 'Zidan', sans-serif;
+  font-size: 46px;
+}
+
+div.membership {
+}
+
+img.membership-image {
+  width: 300px;
+  height: 300px;
+}
+
+span.membership-link {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mobile-row {
+  flex-direction: column !important;
+}
