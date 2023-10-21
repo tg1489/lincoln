@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b436d4b.css",
+    "main.js": "/static/js/main.303b7d5b.js",
+    "static/media/sign2.png": "/static/media/sign2.28ec4693d2bddd81018d.png",
+    "static/media/bookfair.png": "/static/media/bookfair.43fa508b0a4c342d6590.png",
+    "static/media/school2.png": "/static/media/school2.5b0a8f6a7e764ab2da9e.png",
+    "static/media/chalkboard.png": "/static/media/chalkboard.50d4bc99c6713c6fce0d.png",
+    "static/media/funday.png": "/static/media/funday.0c96a702f55e582c3be4.png",
+    "static/media/lion-logo2.png": "/static/media/lion-logo2.6a659ced087453d75402.png",
+    "static/media/shopping-cart-outline-svgrepo-com.svg": "/static/media/shopping-cart-outline-svgrepo-com.ba8e09e7c5c5f6ada23e01d67506df41.svg",
+    "index.html": "/index.html",
+    "main.3b436d4b.css.map": "/static/css/main.3b436d4b.css.map",
+    "main.303b7d5b.js.map": "/static/js/main.303b7d5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b436d4b.css",
+    "static/js/main.303b7d5b.js"
+  ]
+}
