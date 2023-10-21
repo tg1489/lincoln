@@ -85,10 +85,10 @@ function App() {
 
     handleResize();
 
-    addEventListener('resize', handleResize);
+    addEventListener('resize', handleResize); // eslint-disable-line no-restricted-globals
 
     return () => {
-      removeEventListener('resize', handleResize);
+      removeEventListener('resize', handleResize); // eslint-disable-line no-restricted-globals
     };
   });
   return (
