@@ -1,6 +1,13 @@
-require('dotenv').config();
-const mongoose = require('mongoose');
+const Sequelize = require('sequelize');
 
-mongoose.connect(process.env.MONGODB_URI);
+const sequelize = process.env.JAWSDB_URL
+  ? new Sequelize(process.env.JAWSDB_URL)
+  : new Sequelize('lincoln_pto', 'root', 'rootpassword', {
+      host: 'localhost',
+      dialect: 'mysql',
+      dialectOptions: {
+        decimalNumbers: true,
+      },
+    });
 
-module.exports = mongoose.connection;
+module.exports = sequelize;

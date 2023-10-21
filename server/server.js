@@ -4,7 +4,7 @@ const { ApolloServer } = require('apollo-server-express');
 const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const path = require('path');
-const db = require('./config/connection');
+const sequelize = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -31,11 +31,10 @@ async function startServer() {
   await server.start();
   server.applyMiddleware({ app, path: '/graphql' });
 
-  // 2.) Open MongoDB Server:
-  db.once('open', () => {
-    // 3.) Start Node.js Express Server:
+  sequelize.sync({ force: false }).then(() => {
+    // Starting Express Server after GraphQL & Database
     app.listen(PORT, () => {
-      console.log(`🌍 Now listening on localhost:${PORT}`);
+      console.log(`API server running on port ${PORT}!`);
       console.log(
         `Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
       );
