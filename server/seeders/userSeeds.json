@@ -1,0 +1,49 @@
+[
+    {
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "savedBooks": [
+        {
+          "authors": ["Author 1"],
+          "description": "Book description 1",
+          "bookId": "book_id_1",
+          "image": "book_image_url_1",
+          "link": "book_link_1",
+          "title": "Book Title 1"
+        },
+        {
+          "authors": ["Author 2"],
+          "description": "Book description 2",
+          "bookId": "book_id_2",
+          "image": "book_image_url_2",
+          "link": "book_link_2",
+          "title": "Book Title 2"
+        }
+      ]
+    },
+    {
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "password456",
+      "savedBooks": [
+        {
+          "authors": ["Author 3"],
+          "description": "Book description 3",
+          "bookId": "book_id_3",
+          "image": "book_image_url_3",
+          "link": "book_link_3",
+          "title": "Book Title 3"
+        },
+        {
+          "authors": ["Author 4"],
+          "description": "Book description 4",
+          "bookId": "book_id_4",
+          "image": "book_image_url_4",
+          "link": "book_link_4",
+          "title": "Book Title 4"
+        }
+      ]
+    }
+  ]
+  
