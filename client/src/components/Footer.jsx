@@ -5,7 +5,7 @@ import facebook from '../assets/fb.png';
 import twitter from '../assets/x.png';
 import email from '../assets/email.png';
 import donate from '../assets/donate.png';
-import '../Footer.css';
+import '../styles/Footer.css';
 
 export default function Footer() {
   return (

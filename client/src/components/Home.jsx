@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
-
 import sign from '../assets/sign2.png';
-import '../Home.css';
+import '../styles/Home.css';
 
 export default function Home({ isMobile }) {
   let counter = 0;

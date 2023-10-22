@@ -20,7 +20,7 @@ import { setContext } from '@apollo/client/link/context';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'react-bootstrap';
-import './App.css';
+import './styles/App.css';
 
 // Endpoint for GraphQL
 const httpLink = createHttpLink({

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import chalkboard from '../assets/chalkboard.png';
-import '../PTO.css';
+import '../styles/PTO.css';
 
 export default function PTO() {
   return (

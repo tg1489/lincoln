@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import lion from '../assets/lion-logo2.png';
 import cart from '../assets/shopping-cart-outline-svgrepo-com.svg';
-import '../Header.css';
+import '../styles/Header.css';
 
 export default function Header({ isMobile, handlePageChange, currentPage }) {
   const [activeTab, setActiveTab] = useState('');

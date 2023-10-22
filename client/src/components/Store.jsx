@@ -4,6 +4,9 @@ import school from '../assets/school2.png';
 import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
+  let counter = 0;
+  const cardKey = () => counter++;
+  
   return (
     <div>
       <Container className='store-container'>
