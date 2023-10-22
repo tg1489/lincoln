@@ -6,12 +6,13 @@ import '../styles/Store.css';
 export default function Store({ isMobile }) {
   let counter = 0;
   const cardKey = () => counter++;
-  
+
   return (
     <div>
       <Container className='store-container'>
         <Row className={`membership mt-5 mb-5 ${isMobile ? 'mobile-row' : ''}`}>
           {isMobile ? (
+            // Mobile
             <>
               <div className='col'>
                 <h2 className='title'>Join Us</h2>
@@ -37,6 +38,7 @@ export default function Store({ isMobile }) {
               </div>
             </>
           ) : (
+            // Standard
             <>
               <div className='col-6'>
                 <p>
