@@ -1,11 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import school from '../assets/school2.png';
+import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
   return (
     <div>
-      <Container>
+      <Container className='store-container'>
         <Row className={`membership mt-5 mb-5 ${isMobile ? 'mobile-row' : ''}`}>
           {isMobile ? (
             <>

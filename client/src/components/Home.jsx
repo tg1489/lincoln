@@ -10,7 +10,7 @@ export default function Home({ isMobile }) {
 
   return (
     <>
-      <Container>
+      <Container className='mb-5'>
         <Row className={isMobile ? 'mobile-columns' : ''}>
           <div className={`mt-5 mb-5 ${isMobile ? 'col' : 'col-6'}`}>
             <img src={sign} className='main-picture' />
