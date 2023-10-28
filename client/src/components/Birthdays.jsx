@@ -1,12 +1,19 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import bd from '../assets/birthdays/bd.png';
+import '../styles/Birthdays.css';
 
 export default function Birthdays() {
   return (
     <div>
       <Container>
         <Row>
-          <h2>Make your child a celebrity in their own school!</h2>
+          <div className='col'>
+            <h2>Make your child a celebrity in their own school!</h2>
+          </div>
+          <div className='col'>
+            <img src={bd} alt='birthday sign' />
+          </div>
         </Row>
         <Row>
           <p>
