@@ -6,7 +6,7 @@ export const storeImages = [
   { src: require('../assets/store/fullzipperhoodiesweatshirts.jpg') },
   { src: require('../assets/store/hoodiesweatshirts.png') },
   { src: require('../assets/store/lincolnpridefullzipperhoodie.jpg') },
-  { src: require('../assets/store/lincolnpridefullzipperhoodie1.jpg') },
+  { src: require('../assets/store/lincolnpridefullzipperhoodie1.png') },
   { src: require('../assets/store/lincolnpridefullzipperhoodie2.jpg') },
   { src: require('../assets/store/lincthelionplushtoy.png') },
   { src: require('../assets/store/longsleevet-shirts.png') },

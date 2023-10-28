@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import school from '../assets/school2.png';
+import { storeImages } from '../utils/storeImages';
 import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
   let counter = 0;
   const cardKey = () => counter++;
+
+  useEffect(() => {
+    // 21 images
+    console.log(storeImages[0].src);
+  }, []);
 
   return (
     <div>
