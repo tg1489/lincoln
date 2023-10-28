@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import bd from '../assets/birthdays/bd.png';
+import confetti from 'canvas-confetti';
 import '../styles/Birthdays.css';
 
 export default function Birthdays() {
+  useEffect(() => {
+    const shootConfetti = () => {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+    };
+    shootConfetti();
+  }, []);
+
   return (
     <div>
       <Container>
-        <Row>
+        <Row className='mt-5 mb-5 one'>
           <div className='col'>
-            <h2>Make your child a celebrity in their own school!</h2>
+            <h2 className='birthday-title'>
+              Make your child a celebrity in their own school!
+            </h2>
           </div>
           <div className='col'>
-            <img src={bd} alt='birthday sign' />
+            <img src={bd} className='birthday-sign' alt='birthday sign' />
           </div>
         </Row>
         <Row>
@@ -42,17 +56,25 @@ export default function Birthdays() {
             cream, soda, donuts, and candy are not permitted.
           </p>
         </Row>
-        <Row>
-          <p>
-            ​ **No gifts or goody bags of any kind can be distributed. Any
-            treats of this kind are best served at home and will not be
-            distributed and will be returned. Parents should not send in any
-            toys. ​ Students may not pass out invitations to birthday parties
-            unless every child in the class is invited. If this is not the case,
-            invitations will be sent home. ​ You can view the District policy
-            at:
-            https://www.edison.k12.nj.us/cms/lib2/NJ01001623/Centricity/domain/36/district%20policies/8505.pdf
-          </p>
+        <Row className='flex-column'>
+          <div className='col'>
+            <p>
+              ​ **No gifts or goody bags of any kind can be distributed. Any
+              treats of this kind are best served at home and will not be
+              distributed and will be returned. Parents should not send in any
+              toys. ​ Students may not pass out invitations to birthday parties
+              unless every child in the class is invited. If this is not the
+              case, invitations will be sent home. ​{' '}
+            </p>
+          </div>
+          <div className='col'>
+            <p>
+              You can view the District policy at:&nbsp;
+              <a href='https://www.edison.k12.nj.us/cms/lib2/NJ01001623/Centricity/domain/36/district%20policies/8505.pdf'>
+                https://www.edison.k12.nj.us/cms/lib2/NJ01001623/Centricity/domain/36/district%20policies/8505.pdf
+              </a>
+            </p>
+          </div>
         </Row>
       </Container>
     </div>
