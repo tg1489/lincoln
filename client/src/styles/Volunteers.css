@@ -5,11 +5,13 @@
 .volunteers-image {
   height: 250px;
   width: 500px;
+  border-radius: 10px;
 }
 
 .volunteers-paragraph {
   background-color: rgb(196, 255, 178);
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .volunteers-mobile {

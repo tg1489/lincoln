@@ -8,14 +8,14 @@ export default function Volunteers({ isMobile }) {
     <div className='volunteers'>
       <Container>
         <Row className='mb-5 mt-5'>
-          <div className={isMobile ? 'col' : 'col-6'}>
+          <div className={isMobile ? 'volunteers-mobile' : 'col-6'}>
             <img
               src={volunteers}
               className='volunteers-image'
               alt='volunteer quote'
             />
           </div>
-          <div className={isMobile ? 'col' : 'col-6'}>
+          <div className={isMobile ? 'volunteers-mobile' : 'col-6'}>
             <p className='volunteers-paragraph'>
               As parents we know how busy day to day activities can be. We know
               that there may be just a few hours that you can spare, and we
@@ -35,7 +35,12 @@ export default function Volunteers({ isMobile }) {
         </Row>
         <Row>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSftuI3FCv_tD7C4Zom6PhpAoCcTocVH-kTHec62QUNqh4-_dQ/viewform'>
-            Fun Day Volunteering Registration
+            Fun Day Volunteer Registration
+          </a>
+        </Row>
+        <Row>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSfMhCpsFoaa4phw7g2qaQM82TqndZsqM2BbR-q349aMQqz57A/viewform'>
+            Fall Fest Volunteer Registration
           </a>
         </Row>
       </Container>
