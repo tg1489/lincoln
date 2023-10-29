@@ -1,21 +1,21 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import volunteers from '../assets/volunteers/volunteers.png';
 import '../styles/Volunteers.css';
 
-export default function Volunteers() {
+export default function Volunteers({ isMobile }) {
   return (
     <div className='volunteers'>
       <Container>
         <Row className='mb-5 mt-5'>
-          <div className='col-6 volunteers-col-1'>
+          <div className={isMobile ? 'col' : 'col-6'}>
             <img
               src={volunteers}
               className='volunteers-image'
               alt='volunteer quote'
             />
           </div>
-          <div className='col-6 volunteers-col-2'>
+          <div className={isMobile ? 'col' : 'col-6'}>
             <p className='volunteers-paragraph'>
               As parents we know how busy day to day activities can be. We know
               that there may be just a few hours that you can spare, and we
@@ -27,6 +27,16 @@ export default function Volunteers() {
               the volunteer form and we will notify you when the need arises.
             </p>
           </div>
+        </Row>
+        <Row>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSczBJ2t018T6Msn1zuPeubm3rK_G4IoUM0vYwOIfw7zhukWLg/viewform'>
+            Class Representative Registration
+          </a>
+        </Row>
+        <Row>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSftuI3FCv_tD7C4Zom6PhpAoCcTocVH-kTHec62QUNqh4-_dQ/viewform'>
+            Fun Day Volunteering Registration
+          </a>
         </Row>
       </Container>
     </div>
