@@ -1,0 +1,13 @@
+.volunteers {
+  height: 100vh;
+}
+
+.volunteers-image {
+  height: 250px;
+  width: 500px;
+}
+
+.volunteers-paragraph {
+  background-color: rgb(196, 255, 178);
+  padding: 1rem;
+}
