@@ -3,11 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import chalkboard from '../assets/chalkboard.png';
 import '../styles/PTO.css';
 
-export default function PTO() {
+export default function PTO({ isMobile }) {
   return (
-    <div className='app-container'>
-      <div className='content'>
-        <Container>
+    <Container>
+      <div className='app-container'>
+        <div className='content'>
           <h1 className='pto-title'>
             PTO Meeting Schedule <span className='pto-year'>2023-24</span>
           </h1>
@@ -22,8 +22,8 @@ export default function PTO() {
             <Row className='line-6'>Test</Row>
             <Row className='line-7'>Additional Dates to Follow</Row>
           </div>
-        </Container>
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }
