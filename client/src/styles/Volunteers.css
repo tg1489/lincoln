@@ -1,9 +1,15 @@
-.volunteers {
-  height: 100vh;
-}
-
 .volunteers-row {
   flex-direction: column;
+}
+
+.volunteers-link-row {
+  margin: 2rem !important;
+  padding: 2rem !important;
+  flex-direction: column !important;
+}
+
+.volunteers-col {
+  margin: 1rem !important;
 }
 
 .volunteers-image {
@@ -17,8 +23,3 @@
   padding: 1rem;
   border-radius: 10px;
 }
-
-/* .volunteers-mobile {
-  display: flex;
-  flex-direction: column;
-} */

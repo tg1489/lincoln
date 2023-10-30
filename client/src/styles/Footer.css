@@ -1,5 +1,7 @@
 nav.footer {
   color: #fff;
+  width: 100%;
+  margin: 0;
 }
 
 .social-media-icons {
@@ -11,4 +13,3 @@ nav.footer {
 .navbar {
   justify-content: center !important;
 }
-
