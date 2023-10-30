@@ -8,14 +8,14 @@ export default function Volunteers({ isMobile }) {
     <div className='volunteers'>
       <Container>
         <Row className='mb-5 mt-5'>
-          <div className={isMobile ? 'volunteers-mobile' : 'col-6'}>
+          <div className={isMobile ? '' : 'col-6'}>
             <img
               src={volunteers}
               className='volunteers-image'
               alt='volunteer quote'
             />
           </div>
-          <div className={isMobile ? 'volunteers-mobile' : 'col-6'}>
+          <div className={isMobile ? '' : 'col-6'}>
             <p className='volunteers-paragraph'>
               As parents we know how busy day to day activities can be. We know
               that there may be just a few hours that you can spare, and we
@@ -28,21 +28,23 @@ export default function Volunteers({ isMobile }) {
             </p>
           </div>
         </Row>
-        <Row>
+        <div>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSczBJ2t018T6Msn1zuPeubm3rK_G4IoUM0vYwOIfw7zhukWLg/viewform'>
             Class Representative Registration
           </a>
-        </Row>
-        <Row>
+        </div>
+
+        <div>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSftuI3FCv_tD7C4Zom6PhpAoCcTocVH-kTHec62QUNqh4-_dQ/viewform'>
             Fun Day Volunteer Registration
           </a>
-        </Row>
-        <Row>
+        </div>
+
+        <div>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSfMhCpsFoaa4phw7g2qaQM82TqndZsqM2BbR-q349aMQqz57A/viewform'>
             Fall Fest Volunteer Registration
           </a>
-        </Row>
+        </div>
       </Container>
     </div>
   );
