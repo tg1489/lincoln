@@ -6,16 +6,14 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  /* min-width: 100vw; */
-  overflow-x: hidden;
   align-items: center;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
 }
 
-/* Content element within the container */
-.content {
-  flex: 1; /* Allow the content to grow to fill available space */
-}
+/* .content {
+  flex: 1;
+} */
 
 .pto-title {
   /* font-family: 'Lemodis Display', sans-serif; */
@@ -33,6 +31,18 @@
   /* border: 2px solid red; */
   width: 800px;
   height: 486px;
+  font-family: 'Chalktastic', sans-serif;
+  color: #fff;
+  font-size: 36px;
+  background-image: url('../assets/chalkboard.png');
+  background-repeat: no-repeat;
+  /* background-size: cover !important; */
+}
+
+.mobile-chalkboard {
+  /* border: 2px solid red; */
+  width: 400px;
+  height: 286px;
   font-family: 'Chalktastic', sans-serif;
   color: #fff;
   font-size: 36px;
