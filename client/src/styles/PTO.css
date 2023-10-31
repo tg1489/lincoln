@@ -20,10 +20,13 @@
   font-family: 'Zidan', sans-serif;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  /* font-size: 8vh; */
+  font-size: 4vw;
 }
 
 .pto-year {
-  font-size: 26px !important;
+  /* font-size: 26px !important; */
+  font-size: 2vw;
   color: var(--yellow);
 }
 
@@ -33,7 +36,8 @@
   height: 486px;
   font-family: 'Chalktastic', sans-serif;
   color: #fff;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 3vw;
   background-image: url('../assets/chalkboard.png');
   background-repeat: no-repeat;
   /* background-size: cover !important; */
@@ -45,7 +49,8 @@
   height: 286px;
   font-family: 'Chalktastic', sans-serif;
   color: #fff;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 4vw;
   background-image: url('../assets/chalkboard.png');
   background-repeat: no-repeat;
   /* background-size: cover !important; */
@@ -70,13 +75,14 @@
 }
 
 .line-4 {
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: 2.4vw;
   align-items: center !important;
   justify-content: center !important;
 }
 
 .line-5 {
-  font-size: 28px;
+  font-size: 2.4vw;
   align-items: center !important;
   justify-content: center !important;
 }
@@ -86,7 +92,7 @@
 }
 
 .line-7 {
-  font-size: 28px;
+  font-size: 2.4vw;
   align-items: center !important;
   justify-content: center !important;
   color: coral;
