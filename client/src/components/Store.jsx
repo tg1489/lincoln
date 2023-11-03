@@ -7,7 +7,6 @@ import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
   const cardKey = uuidv4();
-  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     // 21 images
