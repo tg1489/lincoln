@@ -7,6 +7,14 @@ import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
   const cardKey = uuidv4();
+  const [show, setShow] = useState(false);
+
+  const handleShow = (name) => {
+    console.log(name);
+    setShow(true);
+  };
+
+  // const handleClose = () => setShow(false);
 
   useEffect(() => {
     // 21 images
@@ -267,7 +275,11 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card
+                key={cardKey}
+                className={isMobile ? '' : 'store-card'}
+                onClick={() => handleShow('argument')}
+              >
                 <Card.Img
                   className='card-image image-board'
                   src={storeImages[13].src}
@@ -278,32 +290,10 @@ export default function Store({ isMobile }) {
                 </Card.Body>
               </Card>
             </Col>
-
-            {/* <div className='col-6'>
-                <p>
-                  Membership gives all Lincoln Elementary students in your
-                  household access to discounts for some events that the PTO
-                  sponsors for our students. Your membership fee helps the PTO
-                  fund many educational and social programs throughout the year
-                  for our children.
-                </p>
-                <p>
-                  Please complete the membership form before proceeding with
-                  your payment. Memberships require both form submission and
-                  payment. Thank you!
-                </p>
-                <div>
-                  <span className='membership-link'>Click Here</span>
-                </div>
-              </div>
-              <div className='col-6'>
-                <h2 className='title'>Join Us</h2>
-                <img src={school} className='membership-image' />
-              </div> */}
           </>
         </Row>
 
-        <Row></Row>
+        <Modal show={show} onHide={() => setShow(false)}></Modal>
       </Container>
     </div>
   );
