@@ -22,7 +22,7 @@ h2.title {
 
 .membership {
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 1rem !important;
   border: 1px solid red;
   flex-direction: row;
   flex-wrap: wrap;
@@ -54,4 +54,8 @@ span.membership-link {
 
 .myCol {
   margin-bottom: 1rem;
+}
+
+.image-board {
+  height: 300px;
 }

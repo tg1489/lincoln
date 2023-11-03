@@ -123,6 +123,32 @@ export default function Store({ isMobile }) {
               </Card>
             </Col>
 
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className='store-card'>
+                <Card.Img
+                  className='card-image'
+                  src={storeImages[9].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Linc the Lion Plush Toy</Card.Title>
+                  <Card.Subtitle>$5.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className='store-card'>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[0].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Birthday Board!</Card.Title>
+                  <Card.Subtitle>$10.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
             {/* <div className='col-6'>
                 <p>
                   Membership gives all Lincoln Elementary students in your
