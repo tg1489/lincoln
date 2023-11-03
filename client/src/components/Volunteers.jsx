@@ -30,19 +30,28 @@ export default function Volunteers({ isMobile }) {
         </Row>
         <Row className='volunteers-link-row'>
           <div className='col mb-2'>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSczBJ2t018T6Msn1zuPeubm3rK_G4IoUM0vYwOIfw7zhukWLg/viewform'>
+            <a
+              href='https://docs.google.com/forms/d/e/1FAIpQLSczBJ2t018T6Msn1zuPeubm3rK_G4IoUM0vYwOIfw7zhukWLg/viewform'
+              target='_blank'
+            >
               Class Representative Registration
             </a>
           </div>
 
           <div className='col mb-2'>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSftuI3FCv_tD7C4Zom6PhpAoCcTocVH-kTHec62QUNqh4-_dQ/viewform'>
+            <a
+              href='https://docs.google.com/forms/d/e/1FAIpQLSftuI3FCv_tD7C4Zom6PhpAoCcTocVH-kTHec62QUNqh4-_dQ/viewform'
+              target='_blank'
+            >
               Fun Day Volunteer Registration
             </a>
           </div>
 
           <div className='col mb-2'>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSfMhCpsFoaa4phw7g2qaQM82TqndZsqM2BbR-q349aMQqz57A/viewform'>
+            <a
+              href='https://docs.google.com/forms/d/e/1FAIpQLSfMhCpsFoaa4phw7g2qaQM82TqndZsqM2BbR-q349aMQqz57A/viewform'
+              target='_blank'
+            >
               Fall Fest Volunteer Registration
             </a>
           </div>
