@@ -179,6 +179,106 @@ export default function Store({ isMobile }) {
               </Card>
             </Col>
 
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Text className='sale'>Sale</Card.Text>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[10].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Long Sleeve T-Shirts</Card.Title>
+                  <Card.Subtitle className='strikethrough'>
+                    $15.00
+                  </Card.Subtitle>
+                  <Card.Subtitle>$10.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Text className='sale'>Sale</Card.Text>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[5].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Hoodie Sweatshirts</Card.Title>
+                  <Card.Subtitle className='strikethrough'>
+                    $22.00
+                  </Card.Subtitle>
+                  <Card.Subtitle>$15.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Text className='sale'>Sale</Card.Text>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[17].src}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.src = storeImages[18].src)
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.src = storeImages[17].src)
+                  }
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Sweatpants</Card.Title>
+                  <Card.Subtitle className='strikethrough'>
+                    $20.00
+                  </Card.Subtitle>
+                  <Card.Subtitle>$15.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Text className='sale'>Sale</Card.Text>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[4].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Full Zipper Hoodie Sweatshirt</Card.Title>
+                  <Card.Subtitle className='strikethrough'>
+                    $25.00
+                  </Card.Subtitle>
+                  <Card.Subtitle>$20.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[4].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>STAFF ONLY - Polo T-Shirt</Card.Title>
+                  <Card.Subtitle>$18.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[13].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>STAFF ONLY - Fleece Jacket</Card.Title>
+                  <Card.Subtitle>$25.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
             {/* <div className='col-6'>
                 <p>
                   Membership gives all Lincoln Elementary students in your
