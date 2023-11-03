@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import school from '../assets/school2.png';
 import { storeImages } from '../utils/storeImages';
@@ -7,10 +7,11 @@ import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
   const cardKey = uuidv4();
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     // 21 images
-    console.log(storeImages[0].src);
+    console.log(storeImages);
   }, []);
 
   return (
@@ -20,7 +21,7 @@ export default function Store({ isMobile }) {
           {isMobile ? (
             // Mobile
             <>
-              <div className='col'>
+              {/* <div className='col'>
                 <h2 className='title'>Join Us</h2>
                 <img src={school} className='membership-image mb-2' />
               </div>
@@ -41,18 +42,18 @@ export default function Store({ isMobile }) {
                 <div>
                   <span className='membership-link'>Click Here</span>
                 </div>
-              </div>
+              </div> */}
             </>
           ) : (
             // Standard
             <>
-              <Col className='myCol' md='4'>
+              <Col className='myCol' md={4}>
                 <Card
                   key={cardKey}
                   className='store-card'
                   onClick={() => alert('ITS A TRAP')}
                 >
-                  <Card.Img src={school}></Card.Img>
+                  <Card.Img className='card-image' src={school}></Card.Img>
                   <Card.Body>
                     <Card.Title>Membership</Card.Title>
                     <Card.Subtitle>$10.00</Card.Subtitle>
@@ -61,17 +62,37 @@ export default function Store({ isMobile }) {
                     </Card.Text>
                   </Card.Body>
                 </Card>
+              </Col>
 
-                <Card
-                  key={cardKey}
-                  className='store-card'
-                  onClick={() => alert('ITS A TRAP')}
-                >
-                  <Card.Img src={school}></Card.Img>
+              <Col className='myCol' md={4}>
+                <Card key={cardKey} className='store-card'>
+                  <Card.Img
+                    className='card-image'
+                    src={storeImages[15].src}
+                  ></Card.Img>
                   <Card.Body>
                     <Card.Title>Staff Membership</Card.Title>
                     <Card.Subtitle>$10.00</Card.Subtitle>
                     <Card.Text>Staff PTO Family Membership 2023-24</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col className='myCol' md={4}>
+                <Card key={cardKey} className='store-card'>
+                  <Card.Img
+                    onMouseOver={(e) =>
+                      (e.currentTarget.src = storeImages[3].src)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.src = storeImages[2].src)
+                    }
+                    className='card-image'
+                    src={storeImages[2].src}
+                  ></Card.Img>
+                  <Card.Body>
+                    <Card.Title>Cinch Pack</Card.Title>
+                    <Card.Subtitle>$15.00</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Col>

@@ -20,7 +20,11 @@ h2.title {
   font-size: 46px;
 }
 
-div.membership {
+.membership {
+  border: 1px solid red;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 img.membership-image {
@@ -44,3 +48,8 @@ span.membership-link {
 .store-card {
   cursor: pointer;
 }
+
+.card-text {
+}
+
+
