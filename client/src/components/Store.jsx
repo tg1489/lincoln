@@ -46,7 +46,7 @@ export default function Store({ isMobile }) {
           ) : (
             // Standard
             <>
-              <Col className='myCol' md={4}>
+              <Col className='myCol' md={3}>
                 <Card
                   key={cardKey}
                   className='store-card'
@@ -63,7 +63,7 @@ export default function Store({ isMobile }) {
                 </Card>
               </Col>
 
-              <Col className='myCol' md={4}>
+              <Col className='myCol' md={3}>
                 <Card key={cardKey} className='store-card'>
                   <Card.Img
                     className='card-image'
@@ -77,7 +77,7 @@ export default function Store({ isMobile }) {
                 </Card>
               </Col>
 
-              <Col className='myCol' md={4}>
+              <Col className='myCol' md={3}>
                 <Card key={cardKey} className='store-card'>
                   <Card.Img
                     onMouseOver={(e) =>
@@ -91,6 +91,63 @@ export default function Store({ isMobile }) {
                   ></Card.Img>
                   <Card.Body>
                     <Card.Title>Cinch Pack</Card.Title>
+                    <Card.Subtitle>$15.00</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col className='myCol' md={3}>
+                <Card key={cardKey} className='store-card'>
+                  <Card.Img
+                    onMouseOver={(e) =>
+                      (e.currentTarget.src = storeImages[8].src)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.src = storeImages[6].src)
+                    }
+                    className='card-image'
+                    src={storeImages[6].src}
+                  ></Card.Img>
+                  <Card.Body>
+                    <Card.Title>Lincoln Pride Full Zipper Hoodie</Card.Title>
+                    <Card.Subtitle>$25.00</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col className='myCol' md={3}>
+                <Card key={cardKey} className='store-card'>
+                  <Card.Img
+                    onMouseOver={(e) =>
+                      (e.currentTarget.src = storeImages[8].src)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.src = storeImages[7].src)
+                    }
+                    className='card-image'
+                    src={storeImages[7].src}
+                  ></Card.Img>
+                  <Card.Body>
+                    <Card.Title>Lincoln Pride Pull Over Hoodie</Card.Title>
+                    <Card.Subtitle>$22.00</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              <Col className='myCol' md={3}>
+                <Card key={cardKey} className='store-card'>
+                  <Card.Img
+                    onMouseOver={(e) =>
+                      (e.currentTarget.src = storeImages[20].src)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.src = storeImages[19].src)
+                    }
+                    className='card-image'
+                    src={storeImages[19].src}
+                  ></Card.Img>
+                  <Card.Body>
+                    <Card.Title>Tie-Dye Short Sleeve Shirt</Card.Title>
                     <Card.Subtitle>$15.00</Card.Subtitle>
                   </Card.Body>
                 </Card>

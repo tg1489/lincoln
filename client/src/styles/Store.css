@@ -21,7 +21,6 @@ h2.title {
 }
 
 .membership {
-  border: 1px solid red;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -49,7 +48,7 @@ span.membership-link {
   cursor: pointer;
 }
 
-.card-text {
+.myCol {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-
-
