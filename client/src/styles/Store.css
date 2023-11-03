@@ -60,3 +60,13 @@ span.membership-link {
 .image-board {
   height: 300px;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.sale {
+  background-color: red;
+  color: #fff;
+  margin-right: 75%;
+}

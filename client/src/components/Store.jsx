@@ -149,6 +149,36 @@ export default function Store({ isMobile }) {
               </Card>
             </Col>
 
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[12].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Sponsorship</Card.Title>
+                  <Card.Subtitle>$10.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col className='myCol' md={3}>
+              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+                <Card.Text className='sale'>Sale</Card.Text>
+                <Card.Img
+                  className='card-image image-board'
+                  src={storeImages[11].src}
+                ></Card.Img>
+                <Card.Body>
+                  <Card.Title>Short Sleeve T-Shirts</Card.Title>
+                  <Card.Subtitle className='strikethrough'>
+                    $10.00
+                  </Card.Subtitle>
+                  <Card.Subtitle>$8.00</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Col>
+
             {/* <div className='col-6'>
                 <p>
                   Membership gives all Lincoln Elementary students in your
