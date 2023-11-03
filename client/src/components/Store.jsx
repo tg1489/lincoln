@@ -8,9 +8,14 @@ import '../styles/Store.css';
 export default function Store({ isMobile }) {
   const cardKey = uuidv4();
   const [show, setShow] = useState(false);
+  const [image, setImage] = useState('');
+  const [title, setTitle] = useState('');
+  const [price, setPrice] = useState('');
 
-  const handleShow = (name) => {
-    console.log(name);
+  const handleShow = (e) => {
+    setImage(e.currentTarget.childNodes[0].src);
+    setTitle(e.currentTarget.childNodes[1].childNodes[0].innerText);
+    setPrice(e.currentTarget.childNodes[1].childNodes[1].innerText);
     setShow(true);
   };
 
@@ -278,7 +283,9 @@ export default function Store({ isMobile }) {
               <Card
                 key={cardKey}
                 className={isMobile ? '' : 'store-card'}
-                onClick={() => handleShow('argument')}
+                onClick={(e) => {
+                  handleShow(e);
+                }}
               >
                 <Card.Img
                   className='card-image image-board'
@@ -293,7 +300,14 @@ export default function Store({ isMobile }) {
           </>
         </Row>
 
-        <Modal show={show} onHide={() => setShow(false)}></Modal>
+        {/* Make a switch using title */}
+
+        <Modal show={show} onHide={() => setShow(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title>{title}</Modal.Title>
+            <Modal.Body>{price}</Modal.Body>
+          </Modal.Header>
+        </Modal>
       </Container>
     </div>
   );
