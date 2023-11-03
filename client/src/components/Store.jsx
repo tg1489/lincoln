@@ -11,15 +11,25 @@ export default function Store({ isMobile }) {
   const [image, setImage] = useState('');
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
+  const [paragraph, setParagraph] = useState('');
 
   const handleShow = (e) => {
     setImage(e.currentTarget.childNodes[0].src);
     setTitle(e.currentTarget.childNodes[1].childNodes[0].innerText);
     setPrice(e.currentTarget.childNodes[1].childNodes[1].innerText);
+
+    switch (title) {
+      case 'STAFF ONLY - Fleece Jacket':
+        setParagraph('This is a test');
+        break;
+      default:
+        setParagraph('');
+    }
+
+  
+
     setShow(true);
   };
-
-  // const handleClose = () => setShow(false);
 
   useEffect(() => {
     // 21 images
@@ -305,7 +315,10 @@ export default function Store({ isMobile }) {
         <Modal show={show} onHide={() => setShow(false)}>
           <Modal.Header closeButton>
             <Modal.Title>{title}</Modal.Title>
-            <Modal.Body>{price}</Modal.Body>
+            <Modal.Body>
+              {paragraph}
+              {price}
+            </Modal.Body>
           </Modal.Header>
         </Modal>
       </Container>
