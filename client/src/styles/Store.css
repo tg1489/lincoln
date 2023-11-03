@@ -40,3 +40,7 @@ span.membership-link {
 .store-container {
   margin-bottom: 7rem;
 }
+
+.store-card {
+  cursor: pointer;
+}

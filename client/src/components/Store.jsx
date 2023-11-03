@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import school from '../assets/school2.png';
 import { storeImages } from '../utils/storeImages';
+import { v4 as uuidv4 } from 'uuid';
 import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
-  let counter = 0;
-  const cardKey = () => counter++;
+  const cardKey = uuidv4();
 
   useEffect(() => {
     // 21 images
@@ -46,7 +46,37 @@ export default function Store({ isMobile }) {
           ) : (
             // Standard
             <>
-              <div className='col-6'>
+              <Col className='myCol' md='4'>
+                <Card
+                  key={cardKey}
+                  className='store-card'
+                  onClick={() => alert('ITS A TRAP')}
+                >
+                  <Card.Img src={school}></Card.Img>
+                  <Card.Body>
+                    <Card.Title>Membership</Card.Title>
+                    <Card.Subtitle>$10.00</Card.Subtitle>
+                    <Card.Text>
+                      Standard PTO Family Membership 2023-24
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+
+                <Card
+                  key={cardKey}
+                  className='store-card'
+                  onClick={() => alert('ITS A TRAP')}
+                >
+                  <Card.Img src={school}></Card.Img>
+                  <Card.Body>
+                    <Card.Title>Staff Membership</Card.Title>
+                    <Card.Subtitle>$10.00</Card.Subtitle>
+                    <Card.Text>Staff PTO Family Membership 2023-24</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              {/* <div className='col-6'>
                 <p>
                   Membership gives all Lincoln Elementary students in your
                   household access to discounts for some events that the PTO
@@ -66,7 +96,7 @@ export default function Store({ isMobile }) {
               <div className='col-6'>
                 <h2 className='title'>Join Us</h2>
                 <img src={school} className='membership-image' />
-              </div>
+              </div> */}
             </>
           )}
         </Row>

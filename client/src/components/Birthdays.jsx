@@ -70,7 +70,10 @@ export default function Birthdays() {
           <div className='col'>
             <p>
               You can view the District policy at:&nbsp;
-              <a href='https://www.edison.k12.nj.us/cms/lib2/NJ01001623/Centricity/domain/36/district%20policies/8505.pdf'>
+              <a
+                href='https://www.edison.k12.nj.us/cms/lib2/NJ01001623/Centricity/domain/36/district%20policies/8505.pdf'
+                target='_blank'
+              >
                 https://www.edison.k12.nj.us/cms/lib2/NJ01001623/Centricity/domain/36/district%20policies/8505.pdf
               </a>
             </p>
