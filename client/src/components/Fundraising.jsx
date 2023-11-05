@@ -1,18 +1,21 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../styles/Fundraising.css';
 
 export default function Fundraising() {
   return (
     <Container>
       <Row>
         <div className='col'>
-          <p>
+          <div className='fundraising-border mt-5 mb-5'>
             Asking for money is never an easy task, especially when part of our
             mission is to help raise funds for items such as student supplies,
             transportation, scholarships and educational & social events.
             However, we strive to not pressure anyone to solicit sales or make
-            unwanted purchases. ​{' '}
-          </p>
+            unwanted purchases. ​
+            <div class='fundraising-border__horizontal'></div>{' '}
+            <div class='fundraising-border__vertical'></div>
+          </div>
           <h4>Methods of Giving are as follows: </h4>
           <ul className='fundraising-ul'>
             <li>
