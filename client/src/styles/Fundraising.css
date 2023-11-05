@@ -1,3 +1,29 @@
+.fundraising-row {
+  flex-direction: column !important;
+}
+
+.fundraising-col {
+  border: 1px solid red;
+}
+
+.fundraising-title {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fundraising-banner {
+  /* width: 1263px; */
+  width: 100vw;
+  height: 555px;
+  background-image: url('../assets/fundraising/fundraising.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  text-align: left;
+  line-height: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
 .fundraising-ul {
   list-style: disc !important;
 }

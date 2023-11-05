@@ -4,8 +4,13 @@ import '../styles/Fundraising.css';
 
 export default function Fundraising() {
   return (
-    <Container>
-      <Row>
+    <>
+      <Row className='fundraising-row'>
+        <div className='fundraising-banner'>
+          <div className='col-4 fundraising-col'>
+            <h1 className='fundraising-title'>Do something incredible today</h1>
+          </div>
+        </div>
         <div className='col'>
           <div className='fundraising-border mt-5 mb-5'>
             Asking for money is never an easy task, especially when part of our
@@ -49,6 +54,6 @@ export default function Fundraising() {
           </p>
         </div>
       </Row>
-    </Container>
+    </>
   );
 }
