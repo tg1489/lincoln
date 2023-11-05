@@ -9,13 +9,17 @@ export default function Volunteers({ isMobile }) {
       <Container>
         <Row className={`mb-5 mt-5 ${isMobile ? ' volunteers-row' : ''}`}>
           <div className={isMobile ? 'col volunteers-col' : 'col-6'}>
-            <img
-              src={volunteers}
-              className='volunteers-image'
-              alt='volunteer quote'
-            />
+            <div>
+              <img
+                src={volunteers}
+                className={
+                  isMobile ? 'mobile-volunteers-image' : 'volunteers-image'
+                }
+                alt='volunteer quote'
+              />
+            </div>
           </div>
-          <div className={isMobile ? 'col volunteers-col' : 'col-6'}>
+          <div className={`mx-5 ${isMobile ? 'col volunteers-col' : 'col-6'}`}>
             <p className='volunteers-paragraph'>
               As parents we know how busy day to day activities can be. We know
               that there may be just a few hours that you can spare, and we

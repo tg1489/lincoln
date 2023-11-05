@@ -18,6 +18,10 @@
   border-radius: 10px;
 }
 
+.mobile-volunteers-image {
+  width: 80vw !important;
+}
+
 .volunteers-paragraph {
   background-color: rgb(196, 255, 178);
   padding: 1rem;
