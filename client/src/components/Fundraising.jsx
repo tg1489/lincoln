@@ -16,6 +16,9 @@ export default function Fundraising() {
             <div class='fundraising-border__horizontal'></div>{' '}
             <div class='fundraising-border__vertical'></div>
           </div>
+        </div>
+
+        <div className='col'>
           <h4>Methods of Giving are as follows: </h4>
           <ul className='fundraising-ul'>
             <li>
