@@ -6,24 +6,49 @@ export default function Fundraising() {
   return (
     <>
       <Row className='fundraising-row'>
-        <div className='fundraising-banner'>
-          <div className='col-4 fundraising-col'>
+        <Row className='fundraising-banner'>
+          <div className='col-7 fundraising-col'>
             <h1 className='fundraising-title'>Do something incredible today</h1>
+            <h3 className='col-11 fundraising-subtitle'>
+              Online fundraising for the people and school you love.
+            </h3>
+            <button>Start Fundraising</button>
           </div>
-        </div>
+        </Row>
         <div className='col'>
-          <div className='fundraising-border mt-5 mb-5'>
-            Asking for money is never an easy task, especially when part of our
-            mission is to help raise funds for items such as student supplies,
-            transportation, scholarships and educational & social events.
-            However, we strive to not pressure anyone to solicit sales or make
-            unwanted purchases. ​
-            <div class='fundraising-border__horizontal'></div>{' '}
-            <div class='fundraising-border__vertical'></div>
-          </div>
+          <div className='ideas mt-5'>Ideas to get you started</div>
+        </div>
+        <div className='ideas-subtitle'>
+          There are lots of ways to make good things happen
         </div>
 
-        <div className='col'>
+        <Row className='ideas-row'>
+          <div className='col-6 mb-5 mt-5 ideas-table'>
+            Amazon will donate 0.5% of the price of your eligible AmazonSmile
+            purchases to our organization. All you have to do is link our school
+            to your Amazon account! Click the Amazon link here to sign up!
+          </div>
+          <div className='col-6 mb-5 mt-5 ideas-table'>
+            Register your Stop & Shop rewards card with A+ rewards and designate
+            Lincoln Elementary School PTO. Then, each time you shop at Stop &
+            Shop using your Stop & Shop rewards card, you will earn cash for our
+            school! ​ Click on the Stop & Shop link here to register!
+          </div>
+        </Row>
+        <Row className='ideas-row'>
+          <div className='col-6 mb-5 mt-5 ideas-table'>
+            Fundraising made easy! Download the free Shoparoo app, select our
+            school from the list and start taking pictures of your everyday
+            purchase receipts!
+          </div>
+          <div className='col-6 mb-5 mt-5 ideas-table'>
+            Earn even more cash to help your school get what it needs through
+            the Box Tops for Education® Bonus App. Turn your everyday receipts
+            into cash for your school. ​ Click the link for more details!
+          </div>
+        </Row>
+
+        {/* <div className='col'>
           <h4>Methods of Giving are as follows: </h4>
           <ul className='fundraising-ul'>
             <li>
@@ -52,7 +77,7 @@ export default function Fundraising() {
             Share this page with others, which grows our community to help our
             school!
           </p>
-        </div>
+        </div> */}
       </Row>
     </>
   );
