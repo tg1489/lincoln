@@ -14,7 +14,7 @@ export default function Fundraising() {
             unwanted purchases. ​{' '}
           </p>
           <h4>Methods of Giving are as follows: </h4>
-          <ul>
+          <ul className='fundraising-ul'>
             <li>
               Checks can be sent into school with your child in a sealed
               envelope marked "PTO donation". You may also mail your payment to:
