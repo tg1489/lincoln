@@ -24,6 +24,14 @@ export default function Fundraising() {
 
         <Row className='ideas-row'>
           <div className='col-6 mb-5 mt-5 ideas-table'>
+            <Row className='ideas-row-2'>
+              <div className='col-6'>
+                <div className='ideas-table-header'>Amazon</div>
+              </div>
+              <div className='col-6'>
+                <div className='ideas-table-image'>Hello</div>
+              </div>
+            </Row>
             Amazon will donate 0.5% of the price of your eligible AmazonSmile
             purchases to our organization. All you have to do is link our school
             to your Amazon account! Click the Amazon link here to sign up!

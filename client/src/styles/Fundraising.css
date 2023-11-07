@@ -70,8 +70,28 @@
   padding-right: 10rem;
 }
 
+.ideas-row-2 {
+  border: 1px solid blue;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
 .ideas-table {
   border: 1px solid #ccc;
   margin-left: 1rem;
   margin-right: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.ideas-table-header {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 21px;
+}
+
+.ideas-table-image {
+  border: 1px solid red;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
 }
