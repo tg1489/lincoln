@@ -91,8 +91,20 @@
 }
 
 .ideas-table-image {
-  /* border: 1px solid red; */
   height: 10vw;
   width: 10vw;
   margin-left: 30% !important;
+}
+
+.ideas-table-image-bt4e {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  margin-left: 30% !important;
+}
+
+.fundraising-button-small {
+  height: 50%;
+  width: 30%;
+  font-size: 60%;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import boxtops from '../assets/fundraising/boxtops.png';
+import boxtops from '../assets/fundraising/box.png';
 import shoparoo from '../assets/fundraising/shoparoo.png';
 import stopshop from '../assets/fundraising/stopshop.png';
 import amazon from '../assets/fundraising/amazon.png';
@@ -39,24 +39,80 @@ export default function Fundraising() {
             Amazon will donate 0.5% of the price of your eligible AmazonSmile
             purchases to our organization. All you have to do is link our school
             to your Amazon account! Click the Amazon link here to sign up!
+            {/* Button */}
+            <Row className='mt-3'>
+              <div className='col'>
+                <button className='fundraising-button-small'>
+                  Start Fundraising
+                </button>
+              </div>
+            </Row>
           </div>
           <div className='col-6 mb-5 mt-5 ideas-table'>
+            <Row className='ideas-row-2'>
+              <div className='col-6'>
+                <div className='ideas-table-header'>Stop & Shop</div>
+              </div>
+              <div className='col-6'>
+                <img src={stopshop} className='ideas-table-image' />
+              </div>
+            </Row>
             Register your Stop & Shop rewards card with A+ rewards and designate
             Lincoln Elementary School PTO. Then, each time you shop at Stop &
             Shop using your Stop & Shop rewards card, you will earn cash for our
-            school! ​ Click on the Stop & Shop link here to register!
+            school!
+            {/* Button */}
+            <Row className='mt-3'>
+              <div className='col'>
+                <button className='fundraising-button-small'>
+                  Start Fundraising
+                </button>
+              </div>
+            </Row>
           </div>
         </Row>
         <Row className='ideas-row'>
           <div className='col-6 mb-5 mt-5 ideas-table'>
+            <Row className='ideas-row-2'>
+              <div className='col-6'>
+                <div className='ideas-table-header'>Shoparoo</div>
+              </div>
+              <div className='col-6'>
+                <img src={shoparoo} className='ideas-table-image' />
+              </div>
+            </Row>
             Fundraising made easy! Download the free Shoparoo app, select our
             school from the list and start taking pictures of your everyday
             purchase receipts!
+            {/* Button */}
+            <Row className='mt-3'>
+              <div className='col'>
+                <button className='fundraising-button-small'>
+                  Start Fundraising
+                </button>
+              </div>
+            </Row>
           </div>
           <div className='col-6 mb-5 mt-5 ideas-table'>
+            <Row className='ideas-row-2'>
+              <div className='col-6'>
+                <div className='ideas-table-header'>Box Tops</div>
+              </div>
+              <div className='col-6'>
+                <img src={boxtops} className='ideas-table-image-bt4e' />
+              </div>
+            </Row>
             Earn even more cash to help your school get what it needs through
             the Box Tops for Education® Bonus App. Turn your everyday receipts
-            into cash for your school. ​ Click the link for more details!
+            into cash for your school.
+            {/* Button */}
+            <Row className='mt-3'>
+              <div className='col'>
+                <button className='fundraising-button-small'>
+                  Start Fundraising
+                </button>
+              </div>
+            </Row>
           </div>
         </Row>
 
