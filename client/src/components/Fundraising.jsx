@@ -1,5 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import boxtops from '../assets/fundraising/boxtops.png';
+import shoparoo from '../assets/fundraising/shoparoo.png';
+import stopshop from '../assets/fundraising/stopshop.png';
+import amazon from '../assets/fundraising/amazon.png';
 import '../styles/Fundraising.css';
 
 export default function Fundraising() {
@@ -29,7 +33,7 @@ export default function Fundraising() {
                 <div className='ideas-table-header'>Amazon</div>
               </div>
               <div className='col-6'>
-                <div className='ideas-table-image'>Hello</div>
+                <img src={amazon} className='ideas-table-image' />
               </div>
             </Row>
             Amazon will donate 0.5% of the price of your eligible AmazonSmile

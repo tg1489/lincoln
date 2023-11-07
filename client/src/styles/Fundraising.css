@@ -66,12 +66,13 @@
 }
 
 .ideas-row {
+  /* border: 1px solid green; */
   padding-left: 10rem;
   padding-right: 10rem;
 }
 
 .ideas-row-2 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   flex-direction: row;
   margin-bottom: 2rem;
 }
@@ -90,8 +91,8 @@
 }
 
 .ideas-table-image {
-  border: 1px solid red;
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: flex-end !important;
+  /* border: 1px solid red; */
+  height: 10vw;
+  width: 10vw;
+  margin-left: 30% !important;
 }
