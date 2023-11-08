@@ -3,20 +3,24 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function BoardMembers() {
   return (
     <>
-      <Col md={6} sm={12} className='board-members'>
+      <Col className='board-members-content sketchy'>
         <h3>2023-24 Board Members</h3>
-        <ul>
-          <li>President: Elizabeth Conley</li>
-          <li>Vice President & Member Coordinator: Robyn</li>
-          <li>
-            Green Treasurer: Recording Secretary & Newsletter Editor: Birthday
-            Board
-          </li>
-          <li>
-            Coordinator: Uma Murigan Spirit Wear Coordinator: Fundraising &
-            Sponsor
-          </li>
-        </ul>
+        <div>
+          <p>
+            President: <span className='member'>Elizabeth Conley</span>
+          </p>
+          <p>
+            Vice President & Member Coordinator:{' '}
+            <span className='member'>Robyn</span>
+          </p>
+          <p>Recording Secretary & Newsletter Editor: ________</p>
+          <p>
+            Birthday Board Coordinator:{' '}
+            <span className='member'>Uma Murigan</span>
+          </p>
+          <p>Spirit Wear Coordinator: ________</p>
+          <p>Fundraising & Sponsor Coordinator: ________</p>
+        </div>
       </Col>
     </>
   );

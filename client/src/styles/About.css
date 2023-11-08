@@ -36,10 +36,56 @@
   color: var(--yellow);
 }
 
+.board-members-content {
+}
+
+.pagechanger-row {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.about-hr {
+}
+
 .about-row {
   /* flex-direction: column !important; */
 }
 
 .board-members > ul {
   /* text-align: left; */
+}
+
+.member {
+  color: var(--yellow);
+}
+.sketchy {
+  padding: 4rem 8rem;
+  display: inline-block;
+
+  border: 3px solid #333;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  background: #fff;
+  position: relative;
+}
+
+.contact-row {
+  flex-direction: column !important;
+}
+
+.small-icons {
+  width: 50px;
+  height: 50px;
+}
+
+.test {
+  flex-direction: row !important;
+  border: 1px solid red;
+}
+
+.test-col {
+  border: 1px solid blue;
+  margin: 0 !important;
+  padding: 0 !important;
 }

@@ -37,7 +37,7 @@ export default function About() {
             onClick={() => handleClick('about')}
           >
             <div>About</div>
-            <hr />
+            <hr className='about-hr' />
           </Col>
           <Col
             md={4}
@@ -47,7 +47,7 @@ export default function About() {
             onClick={() => handleClick('contact')}
           >
             <div className=''>Contact</div>
-            <hr />
+            <hr className='about-hr' />
           </Col>
           <Col
             md={4}
@@ -57,10 +57,10 @@ export default function About() {
             onClick={() => handleClick('board-members')}
           >
             <div className=''>Board Members</div>
-            <hr />
+            <hr className='about-hr' />
           </Col>
         </Row>
-        <Row>{pageChanger()}</Row>
+        <Row className='pagechanger-row'>{pageChanger()}</Row>
       </Container>
     </div>
   );
