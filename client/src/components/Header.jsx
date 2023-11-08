@@ -164,16 +164,6 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
                     About Us
                   </a>
                 </li>
-                <li className='nav-item'>
-                  {' '}
-                  <a
-                    className='nav-link'
-                    href='#'
-                    onClick={() => handleClick('contact')}
-                  >
-                    Contact Us
-                  </a>
-                </li>
               </>
             ) : (
               <>
@@ -211,13 +201,6 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
                       onClick={() => handleClick('about')}
                     >
                       About Us
-                    </a>
-                    <a
-                      className='dropdown-item'
-                      href='#'
-                      onClick={() => handleClick('contact')}
-                    >
-                      Contact Us
                     </a>
                   </div>
                 </li>

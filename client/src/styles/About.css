@@ -1,0 +1,45 @@
+.about-fragment {
+  height: 100vh !important;
+}
+
+.active {
+  color: var(--yellow) !important;
+}
+
+.about {
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.about:hover {
+  color: var(--yellow) !important;
+}
+
+.contact {
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact:hover {
+  color: var(--yellow);
+}
+
+.board-members {
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.board-members:hover {
+  color: var(--yellow);
+}
+
+.about-row {
+  /* flex-direction: column !important; */
+}
+
+.board-members > ul {
+  /* text-align: left; */
+}
