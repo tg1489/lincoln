@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/About.css';
 
@@ -7,6 +7,22 @@ export default function About() {
   const handleClick = (tab) => {
     setActiveTab(tab);
   };
+
+  useEffect(() => {
+    switch (activeTab) {
+      case 'about':
+        // <About />
+        break;
+      case 'contact':
+        // <Contact />
+        break;
+      case 'board-members':
+        // <BoardMembers />
+        break;
+      default:
+      // <About />
+    }
+  }, []);
 
   return (
     <div className='about-fragment'>
@@ -41,22 +57,6 @@ export default function About() {
             <hr />
           </Col>
 
-          {/* <Col md={6} sm={12} className='board-members'>
-            <h3>2023-24 Board Members</h3>
-            <ul>
-              <li>President: Elizabeth Conley</li>
-              <li>Vice President & Member Coordinator: Robyn</li>
-              <li>
-                Green Treasurer: Recording Secretary & Newsletter Editor:
-                Birthday Board
-              </li>
-              <li>
-                Coordinator: Uma Murigan Spirit Wear Coordinator: Fundraising &
-                Sponsor
-              </li>
-            </ul>
-          </Col>
-
           <Col md={10}>
             <p>
               OUR MISSION The Lincoln Elementary School Parent-Teacher
@@ -87,7 +87,7 @@ export default function About() {
               53 Brookville Rd Edison, NJ 08817 ​ Email: lncpto@gmail.com
               Twitter: @pto_lincoln8 Facebook: @LNCPROUD
             </p>
-          </Col> */}
+          </Col>
         </Row>
       </Container>
     </div>
