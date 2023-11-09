@@ -8,10 +8,10 @@ export default function Contact() {
   return (
     <>
       <Row className='contact-row'>
-        <Col>
+        <Col className='mb-3 mt-3'>
           <h3>Contact Us</h3>
         </Col>
-        <Row className='contact-row'>
+        <Row className='contact-row-mini mb-1'>
           <Col md={1}>
             <img src={location} className='small-icons' />
           </Col>
@@ -19,29 +19,23 @@ export default function Contact() {
             53 Brookville Rd Edison, NJ 08817
           </Col>
         </Row>
-        <Row className='contact-row'>
-          <Col md={1} >
+        <Row className='contact-row-mini mb-1'>
+          <Col md={1}>
             <img src={email} className='small-icons' />
           </Col>
-          <Col md={1}>
-            lncpto@gmail.com
-          </Col>
+          <Col md={1}>lncpto@gmail.com</Col>
         </Row>
-        <Row className='contact-row'>
-          <Col md={1} >
+        <Row className='contact-row-mini mb-1'>
+          <Col md={1}>
             <img src={x} className='small-icons' />
           </Col>
-          <Col md={1} >
-            @pto_lincoln8
-          </Col>
+          <Col md={1}>@pto_lincoln8</Col>
         </Row>
-        <Row className='contact-row'>
-          <Col md={1} >
+        <Row className='contact-row-mini mb-1'>
+          <Col md={1}>
             <img src={facebook} className='small-icons' />
           </Col>
-          <Col md={1} >
-            @LNCPROUD
-          </Col>
+          <Col md={1}>@LNCPROUD</Col>
         </Row>
       </Row>
     </>

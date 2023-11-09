@@ -80,7 +80,7 @@
   margin-right: 40px;
 }
 
-.contact-row {
+.contact-row-mini {
   flex-direction: row !important;
   justify-content: center;
 }
