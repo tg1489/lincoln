@@ -80,16 +80,9 @@
   margin-right: 40px;
 }
 
-.test {
+.contact-row {
   flex-direction: row !important;
-  border: 1px solid red;
   justify-content: center;
-}
-
-.test-col {
-  border: 1px solid blue;
-  /* margin: 0 !important; */
-  /* padding: 0 !important; */
 }
 
 .location {

@@ -11,35 +11,35 @@ export default function Contact() {
         <Col>
           <h3>Contact Us</h3>
         </Col>
-        <Row className='test'>
-          <Col md={1} className='test-col'>
+        <Row className='contact-row'>
+          <Col md={1}>
             <img src={location} className='small-icons' />
           </Col>
-          <Col md={1} className='test-col location'>
+          <Col md={1} className='location'>
             53 Brookville Rd Edison, NJ 08817
           </Col>
         </Row>
-        <Row className='test'>
-          <Col md={1} className='test-col'>
+        <Row className='contact-row'>
+          <Col md={1} >
             <img src={email} className='small-icons' />
           </Col>
-          <Col md={1} className='test-col'>
+          <Col md={1}>
             lncpto@gmail.com
           </Col>
         </Row>
-        <Row className='test'>
-          <Col md={1} className='test-col'>
+        <Row className='contact-row'>
+          <Col md={1} >
             <img src={x} className='small-icons' />
           </Col>
-          <Col md={1} className='test-col'>
+          <Col md={1} >
             @pto_lincoln8
           </Col>
         </Row>
-        <Row className='test'>
-          <Col md={1} className='test-col'>
+        <Row className='contact-row'>
+          <Col md={1} >
             <img src={facebook} className='small-icons' />
           </Col>
-          <Col md={1} className='test-col'>
+          <Col md={1} >
             @LNCPROUD
           </Col>
         </Row>
