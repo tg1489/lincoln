@@ -15,7 +15,7 @@ export default function Contact() {
           <Col md={1} className='test-col'>
             <img src={location} className='small-icons' />
           </Col>
-          <Col md={1} className='test-col'>
+          <Col md={1} className='test-col location'>
             53 Brookville Rd Edison, NJ 08817
           </Col>
         </Row>
