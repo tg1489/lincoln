@@ -1,3 +1,11 @@
+@import url('https://fonts.cdnfonts.com/css/hando-soft-trial');
+
+.about-lincoln-pto {
+  font-family: 'Hando Soft Trial', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .about-fragment {
   height: 100vh !important;
 }

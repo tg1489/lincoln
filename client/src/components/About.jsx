@@ -5,7 +5,7 @@ import Contact from './about/Contact.jsx';
 import BoardMembers from './about/BoardMembers.jsx';
 import '../styles/About.css';
 
-export default function About() {
+export default function About({ isMobile }) {
   const [activeTab, setActiveTab] = useState('about');
   const handleClick = (tab) => {
     setActiveTab(tab);
