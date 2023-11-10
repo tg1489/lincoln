@@ -6,7 +6,7 @@ import facebook from '../../assets/about/facebook.png';
 import location from '../../assets/about/location.png';
 export default function Contact({ isMobile }) {
   return isMobile ? (
-    <>
+    <div className='mobile-fragment'>
       <Container>
         <Row>
           <Col className='mb-5'>
@@ -38,7 +38,7 @@ export default function Contact({ isMobile }) {
           <Col>@LNCPROUD</Col>
         </Row>
       </Container>
-    </>
+    </div>
   ) : (
     // Standard
     <div className='main-container'>

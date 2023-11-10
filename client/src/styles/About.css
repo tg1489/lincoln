@@ -103,3 +103,9 @@
   width: 25px;
   height: 25px;
 }
+
+/* Mobile */
+
+.mobile-fragment {
+  height: 100vh !important;
+}
