@@ -32,19 +32,21 @@ export default function About({ isMobile }) {
       <Container>
         <Row className='mb-5 mt-2'>
           <Col
-            className={` ${activeTab === 'about' ? 'active' : ''}`}
+            className={`about ${activeTab === 'about' ? 'active' : ''}`}
             onClick={() => handleClick('about')}
           >
             About
           </Col>
           <Col
-            className={` ${activeTab === 'about' ? 'active' : ''}`}
+            className={`contact ${activeTab === 'contact' ? 'active' : ''}`}
             onClick={() => handleClick('contact')}
           >
             Contact
           </Col>
           <Col
-            className={` ${activeTab === 'about' ? 'active' : ''}`}
+            className={`board-members ${
+              activeTab === 'board-members' ? 'active' : ''
+            }`}
             onClick={() => handleClick('board-members')}
           >
             Board Members
