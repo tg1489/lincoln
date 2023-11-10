@@ -27,7 +27,33 @@ export default function About({ isMobile }) {
     }
   };
 
-  return (
+  return isMobile ? (
+    <>
+      <Container>
+        <Row className='mb-5 mt-2'>
+          <Col
+            className={` ${activeTab === 'about' ? 'active' : ''}`}
+            onClick={() => handleClick('about')}
+          >
+            About
+          </Col>
+          <Col
+            className={` ${activeTab === 'about' ? 'active' : ''}`}
+            onClick={() => handleClick('contact')}
+          >
+            Contact
+          </Col>
+          <Col
+            className={` ${activeTab === 'about' ? 'active' : ''}`}
+            onClick={() => handleClick('board-members')}
+          >
+            Board Members
+          </Col>
+        </Row>
+        <Row className='pagechanger-row'>{pageChanger()}</Row>
+      </Container>
+    </>
+  ) : (
     <div className='about-fragment'>
       <Container>
         <Row className='about-row'>
