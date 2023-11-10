@@ -17,7 +17,7 @@ export default function About({ isMobile }) {
         return <AboutTab />;
         break;
       case 'contact':
-        return <Contact />;
+        return <Contact isMobile={isMobile} />;
         break;
       case 'board-members':
         return <BoardMembers />;
