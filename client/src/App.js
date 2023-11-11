@@ -10,6 +10,7 @@ import PTO from './components/PTO';
 import Birthdays from './components/Birthdays';
 import Store from './components/Store';
 import Footer from './components/Footer';
+import { Auth0Provider } from '@auth0/auth0-react';
 import {
   ApolloClient,
   InMemoryCache,
@@ -21,6 +22,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'react-bootstrap';
 import './styles/App.css';
+
+// Auth0
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 // Endpoint for GraphQL
 const httpLink = createHttpLink({
@@ -94,18 +99,24 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <Header
-          isMobile={isMobile}
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
-        {render()}
-        <Footer
-          className='footer'
-          isMobile={isMobile}
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
+        <Auth0Provider
+          domain={domain}
+          clientId={clientId}
+          redirectUri={window.location.origin}
+        >
+          <Header
+            isMobile={isMobile}
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+          {render()}
+          <Footer
+            className='footer'
+            isMobile={isMobile}
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        </Auth0Provider>
       </ApolloProvider>
     </>
   );
