@@ -100,7 +100,12 @@ function App() {
           handlePageChange={handlePageChange}
         />
         {render()}
-        <Footer className='footer' isMobile={isMobile} />
+        <Footer
+          className='footer'
+          isMobile={isMobile}
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
       </ApolloProvider>
     </>
   );
