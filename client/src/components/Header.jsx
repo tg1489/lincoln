@@ -228,9 +228,10 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             <img src={cart} className='shopping-cart-image mx-2' />
           )}
 
-          {/* Profile Picture shows after login */}
           {/* Login */}
-          <span className='login'>Login</span>
+          <span className='login' onClick={() => handleClick('login')}>
+            Login
+          </span>
         </div>
       </div>
     </nav>

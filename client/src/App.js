@@ -9,6 +9,7 @@ import Volunteers from './components/Volunteers.jsx';
 import PTO from './components/PTO';
 import Birthdays from './components/Birthdays';
 import Store from './components/Store';
+import Login from './components/Login';
 import Footer from './components/Footer';
 import { Auth0Provider } from '@auth0/auth0-react';
 import {
@@ -75,6 +76,8 @@ function App() {
         return <Volunteers isMobile={isMobile} />;
       case 'about':
         return <About isMobile={isMobile} />;
+      case 'login':
+        return <Login isMobile={isMobile} />;
 
       default:
         return <Home isMobile={isMobile} />;
