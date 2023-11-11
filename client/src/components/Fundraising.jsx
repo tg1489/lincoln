@@ -46,9 +46,11 @@ export default function Fundraising({ isMobile }) {
         {/* Button */}
         <Row className='mt-3'>
           <div className='col'>
-            <button className='fundraising-button-small'>
-              Start Fundraising
-            </button>
+            <a href='https://www.amazon.com/ch/45-3035230' target='_blank'>
+              <button className='fundraising-button-small'>
+                Start Fundraising
+              </button>
+            </a>
           </div>
         </Row>
       </div>
@@ -67,9 +69,11 @@ export default function Fundraising({ isMobile }) {
         {/* Button */}
         <Row className='mt-3'>
           <div className='col'>
-            <button className='fundraising-button-small'>
-              Start Fundraising
-            </button>
+            <a href='https://stopandshop.com/school-rewards/' target='_blank'>
+              <button className='fundraising-button-small'>
+                Start Fundraising
+              </button>
+            </a>
           </div>
         </Row>
         <Row className='ideas-row-2'>
@@ -86,9 +90,14 @@ export default function Fundraising({ isMobile }) {
         {/* Button */}
         <Row className='mt-3'>
           <div className='col'>
-            <button className='fundraising-button-small'>
-              Start Fundraising
-            </button>
+            <a
+              href='https://dcc82af0-c647-4b26-b90f-5aa4a840c9e0.filesusr.com/ugd/5bf558_01cd2b1c44e944239eded909f1741d8e.pdf'
+              target='_blank'
+            >
+              <button className='fundraising-button-small'>
+                Start Fundraising
+              </button>
+            </a>
           </div>
         </Row>
       </div>
@@ -107,9 +116,14 @@ export default function Fundraising({ isMobile }) {
         {/* Button */}
         <Row className='mt-3'>
           <div className='col'>
-            <button className='fundraising-button-small'>
-              Start Fundraising
-            </button>
+            <a
+              href='https://www.boxtops4education.com/bonusapp'
+              target='_blank'
+            >
+              <button className='fundraising-button-small'>
+                Start Fundraising
+              </button>
+            </a>
           </div>
         </Row>
       </div>
@@ -150,9 +164,11 @@ export default function Fundraising({ isMobile }) {
             {/* Button */}
             <Row className='mt-3'>
               <div className='col'>
-                <button className='fundraising-button-small'>
-                  Start Fundraising
-                </button>
+                <a href='https://www.amazon.com/ch/45-3035230' target='_blank'>
+                  <button className='fundraising-button-small'>
+                    Start Fundraising
+                  </button>
+                </a>
               </div>
             </Row>
           </div>
@@ -172,9 +188,14 @@ export default function Fundraising({ isMobile }) {
             {/* Button */}
             <Row className='mt-3'>
               <div className='col'>
-                <button className='fundraising-button-small'>
-                  Start Fundraising
-                </button>
+                <a
+                  href='https://stopandshop.com/school-rewards/'
+                  target='_blank'
+                >
+                  <button className='fundraising-button-small'>
+                    Start Fundraising
+                  </button>
+                </a>
               </div>
             </Row>
           </div>
@@ -195,9 +216,14 @@ export default function Fundraising({ isMobile }) {
             {/* Button */}
             <Row className='mt-3'>
               <div className='col'>
-                <button className='fundraising-button-small'>
-                  Start Fundraising
-                </button>
+                <a
+                  href='https://dcc82af0-c647-4b26-b90f-5aa4a840c9e0.filesusr.com/ugd/5bf558_01cd2b1c44e944239eded909f1741d8e.pdf'
+                  target='_blank'
+                >
+                  <button className='fundraising-button-small'>
+                    Start Fundraising
+                  </button>
+                </a>
               </div>
             </Row>
           </div>
@@ -216,9 +242,14 @@ export default function Fundraising({ isMobile }) {
             {/* Button */}
             <Row className='mt-3'>
               <div className='col'>
-                <button className='fundraising-button-small'>
-                  Start Fundraising
-                </button>
+                <a
+                  href='https://www.boxtops4education.com/bonusapp'
+                  target='_blank'
+                >
+                  <button className='fundraising-button-small'>
+                    Start Fundraising
+                  </button>
+                </a>
               </div>
             </Row>
           </div>

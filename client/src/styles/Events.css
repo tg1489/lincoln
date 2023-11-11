@@ -37,6 +37,6 @@ span.membership-link {
   flex-direction: column !important;
 }
 
-/* .events-row {
-  margin-bottom: 1rem;
-} */
+.funday {
+  cursor: pointer;
+}

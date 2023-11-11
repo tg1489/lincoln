@@ -8,6 +8,13 @@ export default function Events({ isMobile }) {
   let counter = 0;
   const cardKey = () => counter++;
 
+  const pageChange = () => {
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSftuI3FCv_tD7C4Zom6PhpAoCcTocVH-kTHec62QUNqh4-_dQ/viewform',
+      '_blank'
+    );
+  };
+
   return (
     <Container>
       <div className='mb-5'>
@@ -29,7 +36,7 @@ export default function Events({ isMobile }) {
             </Card>
           </Col>
           <Col className='mb-4'>
-            <Card key={cardKey}>
+            <Card key={cardKey} className='funday' onClick={() => pageChange()}>
               <Card.Img src={funday}></Card.Img>
               <Card.Body>
                 <Card.Title>Funday</Card.Title>
