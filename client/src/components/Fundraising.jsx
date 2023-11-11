@@ -17,7 +17,12 @@ export default function Fundraising({ isMobile }) {
             <h3 className='col fundraising-subtitle'>
               Online fundraising for the people and school you love.
             </h3>
-            <button>Start Fundraising</button>
+            <a
+              href='https://www.paypal.com/checkoutweb/signup?token=0N999078SK769293Y&ssrt=1699714536716&rcache=1&useraction=PAY&cookieBannerVariant=hidden&country.x=US&locale.x=en_US&ulPage=noMatch&abTestThrottle=xoon&locale.x=en_US&country.x=US'
+              target='_blank'
+            >
+              <button>Start Fundraising</button>
+            </a>
           </div>
         </Row>
 
@@ -138,7 +143,12 @@ export default function Fundraising({ isMobile }) {
             <h3 className='col-11 fundraising-subtitle'>
               Online fundraising for the people and school you love.
             </h3>
-            <button>Start Fundraising</button>
+            <a
+              href='https://www.paypal.com/checkoutweb/signup?token=0N999078SK769293Y&ssrt=1699714536716&rcache=1&useraction=PAY&cookieBannerVariant=hidden&country.x=US&locale.x=en_US&ulPage=noMatch&abTestThrottle=xoon&locale.x=en_US&country.x=US'
+              target='_blank'
+            >
+              <button>Start Fundraising</button>
+            </a>
           </div>
         </Row>
         <div className='col'>
