@@ -83,7 +83,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           >
             <li className='nav-item'>
               <a
-                className={`nav-link ${activeTab === 'home' ? 'active' : ''}`}
+                className={`nav-link ${isMobile ? 'mobile-header-font' : ''} ${
+                  activeTab === 'home' ? 'active' : ''
+                }`}
                 href='#'
                 onClick={() => handleClick('home')}
               >
@@ -92,7 +94,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             </li>
             <li className='nav-item'>
               <a
-                className={`nav-link ${activeTab === 'pto' ? 'active' : ''}`}
+                className={`nav-link ${isMobile ? 'mobile-header-font' : ''} ${
+                  activeTab === 'pto' ? 'active' : ''
+                }`}
                 href='#'
                 onClick={() => handleClick('pto')}
               >
@@ -101,7 +105,7 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             </li>
             <li className='nav-item'>
               <a
-                className={`nav-link ${
+                className={`nav-link ${isMobile ? 'mobile-header-font' : ''} ${
                   activeTab === 'birthdays' ? 'active' : ''
                 }`}
                 href='#'
@@ -112,7 +116,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             </li>
             <li className='nav-item'>
               <a
-                className={`nav-link ${activeTab === 'store' ? 'active' : ''}`}
+                className={`nav-link ${isMobile ? 'mobile-header-font' : ''} ${
+                  activeTab === 'store' ? 'active' : ''
+                }`}
                 href='#'
                 onClick={() => handleClick('store')}
               >
@@ -121,7 +127,7 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             </li>
             <li className='nav-item'>
               <a
-                className={`nav-link ${
+                className={`nav-link ${isMobile ? 'mobile-header-font' : ''} ${
                   activeTab === 'volunteers' ? 'active' : ''
                 }`}
                 href='#'
@@ -132,7 +138,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             </li>
             <li className='nav-item'>
               <a
-                className={`nav-link ${activeTab === 'events' ? 'active' : ''}`}
+                className={`nav-link ${isMobile ? 'mobile-header-font' : ''} ${
+                  activeTab === 'events' ? 'active' : ''
+                }`}
                 href='#'
                 onClick={() => handleClick('events')}
               >
@@ -147,7 +155,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
                 <li className='nav-item'>
                   {' '}
                   <a
-                    className='nav-link'
+                    className={`nav-link ${
+                      isMobile ? 'mobile-header-font' : ''
+                    }`}
                     href='#'
                     onClick={() => handleClick('fundraising')}
                   >
@@ -157,7 +167,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
                 <li className='nav-item'>
                   {' '}
                   <a
-                    className='nav-link'
+                    className={`nav-link ${
+                      isMobile ? 'mobile-header-font' : ''
+                    }`}
                     href='#'
                     onClick={() => handleClick('about')}
                   >

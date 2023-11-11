@@ -7,6 +7,10 @@ li > a {
   font-size: 1.1vw !important;
 }
 
+.mobile-header-font {
+  font-size: 3vw !important;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
