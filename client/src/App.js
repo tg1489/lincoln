@@ -25,8 +25,10 @@ import 'react-bootstrap';
 import './styles/App.css';
 
 // Auth0
-const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+const domain = 'dev-rcel1bldoq42stb4.us.auth0.com';
+const clientId = 'GVYrR2dZqO91gZq6aQbCEN6oj4tWe2D8';
+
+console.log('Auth0 Domain:', domain);
 
 // Endpoint for GraphQL
 const httpLink = createHttpLink({

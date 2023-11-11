@@ -3,5 +3,11 @@ import LoginButton from './login/LoginButton.jsx';
 import LogoutButton from './login/LogoutButton.jsx';
 
 export default function Login() {
-  return <>Welcome to the login page!</>;
+  return (
+    <>
+      Welcome to the login page!
+      <LoginButton />
+      <LogoutButton />
+    </>
+  );
 }
