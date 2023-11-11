@@ -232,6 +232,9 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           <span className='login' onClick={() => handleClick('login')}>
             Login
           </span>
+          {/* <span className='profile' onClick={() => handleClick('profile')}>
+            Profile
+          </span> */}
         </div>
       </div>
     </nav>
