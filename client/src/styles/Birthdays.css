@@ -28,6 +28,15 @@ div.box {
   color: hsla(0, 95%, 35%, 1);
 }
 
+.balloons {
+  height: 200px;
+  width: 200px;
+}
+
+.temp {
+  border: 1px solid green;
+}
+
 .row-1 {
   flex-direction: row-reverse;
   margin-bottom: 3rem;
@@ -38,6 +47,9 @@ div.box {
 .row-2 {
   flex-direction: row;
   margin-bottom: 3rem;
-  text-align: left;
   font-size: 18px;
+}
+
+.mobile-row-2 {
+  flex-direction: column;
 }
