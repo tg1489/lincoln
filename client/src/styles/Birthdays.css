@@ -27,3 +27,17 @@ div.box {
 .birthday-title {
   color: hsla(0, 95%, 35%, 1);
 }
+
+.row-1 {
+  flex-direction: row-reverse;
+  margin-bottom: 3rem;
+  text-align: left;
+  font-size: 18px;
+}
+
+.row-2 {
+  flex-direction: row;
+  margin-bottom: 3rem;
+  text-align: left;
+  font-size: 18px;
+}

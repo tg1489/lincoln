@@ -4,7 +4,7 @@ import bd from '../assets/birthdays/bd.png';
 import confetti from 'canvas-confetti';
 import '../styles/Birthdays.css';
 
-export default function Birthdays() {
+export default function Birthdays({ isMobile }) {
   useEffect(() => {
     const shootConfetti = () => {
       confetti({
@@ -29,32 +29,31 @@ export default function Birthdays() {
             <img src={bd} className='birthday-sign' alt='birthday sign' />
           </div>
         </Row>
-        <Row>
-          <p>
-            ​ Make your child feel extra special by having their name (first
-            name and last initial) displayed on the Lincoln School Marquee in
-            the front of the school for a minimum of three days. Simply click
-            here to fill out the form! PAYMENT MUST BE MADE AT LEAST ONE WEEK
-            PRIOR TO YOUR CHILD’S BIRTHDAY! Requests will be accommodated on a
-            first come, first serve basis.
-          </p>
+        <Row className='row-1'>
+          <div className='col-md-6'>
+            Make your child feel extra special by having their name (first name
+            and last initial) displayed on the Lincoln School Marquee in the
+            front of the school for a minimum of three days. Simply click here
+            to fill out the form! PAYMENT MUST BE MADE AT LEAST ONE WEEK PRIOR
+            TO YOUR CHILD'S BIRTHDAY! Requests will be accommodated on a first
+            come, first serve basis.
+          </div>
         </Row>
 
-        <Row>
-          <p>
-            {' '}
+        <Row className='row-2'>
+          <div className='col-md-6'>
             Here is the Lincoln School's Birthday Celebration Procedure:
             Beginning September 2016, birthday celebrations will no longer
-            include food/drinks/snacks. A child’s birthday will be celebrated
+            include food/drinks/snacks. A child's birthday will be celebrated
             with a song and parents may choose to come in and read a short
             story/picture book (like our mystery reader) at a time prearranged
             with the teacher and/or send in a book for the classroom library
             with your child's name, and a short dedication statement on the
-            inside cover of the book. Parents should contact their child’s
+            inside cover of the book. Parents should contact their child's
             teacher to find out the best way to celebrate birthdays in that
-            class. ​ According to NJ School Nutrition Policy, cupcakes, ice
-            cream, soda, donuts, and candy are not permitted.
-          </p>
+            class. According to NJ School Nutrition Policy, cupcakes, ice cream,
+            soda, donuts, and candy are not permitted.
+          </div>
         </Row>
         <Row className='flex-column'>
           <div className='col'>
