@@ -59,7 +59,33 @@ export default function Store({ isMobile }) {
     <div>
       <Container className='store-container'>
         <Row>
-          Cart Count: <p className='cart-count'>{cartCount}</p>
+          <Col>
+            Cart Count: <span className='cart-count'>{cartCount}</span>
+          </Col>
+          <Col>
+            Cart Details:
+            {Object.keys(cartDetails).length === 0 ? (
+              <p>Your cart is empty</p>
+            ) : (
+              <ul>
+                {Object.values(cartDetails).map((item) => (
+                  <li>
+                    {item.name} - {item.formattedValue} - Quantity:{' '}
+                    {item.quantity}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Col>
+
+          <Col>
+            <button
+              className='remove-item'
+              onClick={() => removeItem('Membership')}
+            >
+              Remove Cart Item
+            </button>
+          </Col>
         </Row>
         <Row className={`membership mt-5 mb-5`}>
           <>

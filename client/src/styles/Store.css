@@ -70,3 +70,9 @@ span.membership-link {
   color: #fff;
   margin-right: 75%;
 }
+
+/* Shopping Cart */
+
+.cart-count {
+  color: red;
+}
