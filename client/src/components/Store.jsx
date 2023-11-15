@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import school from '../assets/school2.png';
 import { storeImages } from '../utils/storeImages';
+import { useShoppingCart } from 'use-shopping-cart';
 import { v4 as uuidv4 } from 'uuid';
 import '../styles/Store.css';
 
@@ -12,6 +13,28 @@ export default function Store({ isMobile }) {
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
   const [paragraph, setParagraph] = useState('');
+
+  // Shopping Cart
+  const {
+    addItem,
+    removeItem,
+    cartCount,
+    clearCart,
+    totalPrice,
+    cartDetails,
+    redirectToCheckout,
+  } = useShoppingCart();
+
+  // Function to add to cart
+  const handleAddToCart = (name, price, image) => {
+    addItem({
+      name: name,
+      price: price,
+      image: image,
+    });
+
+    console.log(`name: ${name} price: ${price} image: ${image}`);
+  };
 
   const handleShow = (e) => {
     setImage(e.currentTarget.childNodes[0].src);
@@ -26,15 +49,8 @@ export default function Store({ isMobile }) {
         setParagraph('');
     }
 
-  
-
     setShow(true);
   };
-
-  useEffect(() => {
-    // 21 images
-    console.log(storeImages);
-  }, []);
 
   return (
     <div>
@@ -52,6 +68,13 @@ export default function Store({ isMobile }) {
                   <Card.Title>Membership</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
                   <Card.Text>Standard PTO Family Membership 2023-24</Card.Text>
+                  <Card.Footer
+                    onClick={() => {
+                      handleAddToCart('Membership', 10, school);
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>

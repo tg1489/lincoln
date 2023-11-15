@@ -19,33 +19,13 @@ import {
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
+import { CartProvider } from 'use-shopping-cart';
 import { setContext } from '@apollo/client/link/context';
 import { useShoppingCart } from 'use-shopping-cart';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'react-bootstrap';
 import './styles/App.css';
-
-// Shopping Cart
-const {
-  addItem,
-  removeItem,
-  cartCount,
-  clearCart,
-  totalPrice,
-  cartDetails,
-  redirectToCheckout,
-} = useShoppingCart();
-
-// Function to add to cart
-const handleAddToCart = (id, name, price, image) => {
-  addItem({
-    id: id,
-    name: name,
-    price: price,
-    image: image,
-  });
-};
 
 // Auth0
 const domain = 'dev-rcel1bldoq42stb4.us.auth0.com';
@@ -94,7 +74,7 @@ function App() {
       case 'fundraising':
         return <Fundraising isMobile={isMobile} />;
       case 'store':
-        return <Store isMobile={isMobile} handleAddToCart={handleAddToCart} />;
+        return <Store isMobile={isMobile} />;
       case 'volunteers':
         return <Volunteers isMobile={isMobile} />;
       case 'about':
@@ -127,25 +107,26 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <Auth0Provider
-          domain={domain}
-          clientId={clientId}
-          redirectUri={window.location.origin}
-        >
-          <Header
-            isMobile={isMobile}
-            currentPage={currentPage}
-            handlePageChange={handlePageChange}
-            handleAddToCart={handleAddToCart}
-          />
-          {render()}
-          <Footer
-            className='footer'
-            isMobile={isMobile}
-            currentPage={currentPage}
-            handlePageChange={handlePageChange}
-          />
-        </Auth0Provider>
+        <CartProvider>
+          <Auth0Provider
+            domain={domain}
+            clientId={clientId}
+            redirectUri={window.location.origin}
+          >
+            <Header
+              isMobile={isMobile}
+              currentPage={currentPage}
+              handlePageChange={handlePageChange}
+            />
+            {render()}
+            <Footer
+              className='footer'
+              isMobile={isMobile}
+              currentPage={currentPage}
+              handlePageChange={handlePageChange}
+            />
+          </Auth0Provider>
+        </CartProvider>
       </ApolloProvider>
     </>
   );
