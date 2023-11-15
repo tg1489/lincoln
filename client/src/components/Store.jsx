@@ -29,8 +29,9 @@ export default function Store({ isMobile }) {
   } = useShoppingCart();
 
   // Function to add to cart
-  const handleAddToCart = (name, price, image) => {
+  const handleAddToCart = (id, name, price, image) => {
     addItem({
+      id: id,
       name: name,
       price: price,
       image: image,
@@ -72,6 +73,12 @@ export default function Store({ isMobile }) {
                   <li>
                     {item.name} - {item.formattedValue} - Quantity:{' '}
                     {item.quantity}
+                    <button
+                      className='remove-item'
+                      onClick={() => removeItem(item.id)}
+                    >
+                      Remove From Cart
+                    </button>
                   </li>
                 ))}
               </ul>
@@ -79,12 +86,7 @@ export default function Store({ isMobile }) {
           </Col>
 
           <Col>
-            <button
-              className='remove-item'
-              onClick={() => removeItem('Membership')}
-            >
-              Remove Cart Item
-            </button>
+            <button onClick={clearCart}>Clear Cart</button>
           </Col>
         </Row>
         <Row className={`membership mt-5 mb-5`}>
@@ -98,7 +100,7 @@ export default function Store({ isMobile }) {
                   <Card.Text>Standard PTO Family Membership 2023-24</Card.Text>
                   <Card.Footer
                     onClick={() => {
-                      handleAddToCart('Membership', 10, school);
+                      handleAddToCart(1, 'Membership', 10, school);
                     }}
                   >
                     Add To Cart
