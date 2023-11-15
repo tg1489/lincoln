@@ -58,7 +58,9 @@ export default function Store({ isMobile }) {
   return (
     <div>
       <Container className='store-container'>
-        <Row></Row>
+        <Row>
+          Cart Count: <p className='cart-count'>{cartCount}</p>
+        </Row>
         <Row className={`membership mt-5 mb-5`}>
           <>
             <Col className='myCol' md={3}>
