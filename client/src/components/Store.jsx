@@ -3,16 +3,19 @@ import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import school from '../assets/school2.png';
 import { storeImages } from '../utils/storeImages';
 import { useShoppingCart } from 'use-shopping-cart';
-import { v4 as uuidv4 } from 'uuid';
 import '../styles/Store.css';
 
 export default function Store({ isMobile }) {
-  const cardKey = uuidv4();
   const [show, setShow] = useState(false);
   const [image, setImage] = useState('');
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
   const [paragraph, setParagraph] = useState('');
+
+  // Cart Information
+  // const [cartName, setCartName] = useState('');
+  // const [cartPrice, setCartPrice] = useState(null);
+  // const [cartImage, setCartImage] = useState(null);
 
   // Shopping Cart
   const {
@@ -55,14 +58,11 @@ export default function Store({ isMobile }) {
   return (
     <div>
       <Container className='store-container'>
+        <Row></Row>
         <Row className={`membership mt-5 mb-5`}>
           <>
             <Col className='myCol' md={3}>
-              <Card
-                key={cardKey}
-                className={isMobile ? '' : 'store-card'}
-                onClick={() => alert('ITS A TRAP')}
-              >
+              <Card key={1} className={isMobile ? '' : 'store-card'}>
                 <Card.Img className='card-image' src={school}></Card.Img>
                 <Card.Body>
                   <Card.Title>Membership</Card.Title>
@@ -80,7 +80,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={2} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   className='card-image'
                   src={storeImages[15].src}
@@ -94,7 +94,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={3} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   onMouseOver={(e) =>
                     (e.currentTarget.src = storeImages[3].src)
@@ -113,7 +113,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={4} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   onMouseOver={(e) =>
                     (e.currentTarget.src = storeImages[8].src)
@@ -132,7 +132,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={5} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   onMouseOver={(e) =>
                     (e.currentTarget.src = storeImages[8].src)
@@ -151,7 +151,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={6} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   onMouseOver={(e) =>
                     (e.currentTarget.src = storeImages[20].src)
@@ -170,7 +170,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={7} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   className='card-image'
                   src={storeImages[9].src}
@@ -183,7 +183,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={8} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   className='card-image image-board'
                   src={storeImages[0].src}
@@ -196,7 +196,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={9} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   className='card-image image-board'
                   src={storeImages[12].src}
@@ -209,7 +209,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={10} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
                   className='card-image image-board'
@@ -226,7 +226,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={11} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
                   className='card-image image-board'
@@ -243,7 +243,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={12} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
                   className='card-image image-board'
@@ -260,7 +260,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={13} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
                   className='card-image image-board'
@@ -283,7 +283,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={14} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
                   className='card-image image-board'
@@ -300,7 +300,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card key={cardKey} className={isMobile ? '' : 'store-card'}>
+              <Card key={15} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   className='card-image image-board'
                   src={storeImages[4].src}
@@ -314,7 +314,7 @@ export default function Store({ isMobile }) {
 
             <Col className='myCol' md={3}>
               <Card
-                key={cardKey}
+                key={16}
                 className={isMobile ? '' : 'store-card'}
                 onClick={(e) => {
                   handleShow(e);
