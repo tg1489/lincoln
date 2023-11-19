@@ -1,11 +1,36 @@
 import React, { useEffect, useRef, useState } from 'react';
+import LoginButton from './login/LoginButton';
+import LogoutButton from './login/LogoutButton';
+import Profile from './login/Profile';
+import { useAuth0 } from '@auth0/auth0-react';
 import lion from '../assets/lion-logo2.png';
 import cart from '../assets/shopping-cart-outline-svgrepo-com.svg';
+import '../styles/Profile.css';
 import '../styles/Header.css';
+
+/*
+export default function Login() {
+  const { isLoading, error } = useAuth0();
+  return (
+    <div className='profile-view'>
+      {error && <p>Authentication Error</p>}
+      {!error && isLoading && <p>Loading...</p>}
+      {!error && !isLoading && (
+        <>
+          <LoginButton />
+          <Profile />
+        </>
+      )}
+    </div>
+  );
+}
+*/
 
 export default function Header({ isMobile, handlePageChange, currentPage }) {
   const [activeTab, setActiveTab] = useState('');
   const mobileNavbarRef = useRef(null);
+
+  const { isLoading, error } = useAuth0();
 
   // Update the activeTab state when the current prop changes
   useEffect(() => {
@@ -229,8 +254,19 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           )}
 
           {/* Login */}
-          <span className='login' onClick={() => handleClick('login')}>
-            Login
+          {/* 
+          <div className='profile-view'>
+            {error && <p>Authentication Error</p>}
+            {!error && isLoading && <p>Loading...</p>}
+            {!error && !isLoading && (
+              <>
+                <LoginButton />
+              </>
+            )}
+          </div> */}
+
+          <span className='login'>
+            <LoginButton />
           </span>
           {/* <span className='profile' onClick={() => handleClick('profile')}>
             Profile

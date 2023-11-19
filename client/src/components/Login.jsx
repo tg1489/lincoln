@@ -3,6 +3,7 @@ import LoginButton from './login/LoginButton.jsx';
 import LogoutButton from './login/LogoutButton.jsx';
 import Profile from './login/Profile.jsx';
 import { useAuth0 } from '@auth0/auth0-react';
+import '../styles/Header.css'
 import '../styles/Profile.css';
 
 export default function Login() {
