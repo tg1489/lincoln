@@ -31,6 +31,7 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
   const mobileNavbarRef = useRef(null);
 
   const { isLoading, error } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
 
   // Update the activeTab state when the current prop changes
   useEffect(() => {
@@ -266,11 +267,19 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           </div> */}
 
           <span className='login'>
-            <LoginButton />
+            {error && <p>Authentication Error</p>}
+            {!error && isLoading && <p>Loading...</p>}
+            {!error && !isLoading && (
+              <>
+                <LoginButton />
+              </>
+            )}
           </span>
-          {/* <span className='profile' onClick={() => handleClick('profile')}>
-            Profile
-          </span> */}
+          {/* Profile */}
+          <span className='profile'>
+            {isAuthenticated && <>{user.nickname}</>}
+            {/* <Profile /> */}
+          </span>
         </div>
       </div>
     </nav>
