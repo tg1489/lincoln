@@ -81,8 +81,8 @@ function App() {
         return <About isMobile={isMobile} />;
       case 'login':
         return <Login isMobile={isMobile} />;
-      // case 'profile':
-      //   return <Profile isMobile={isMobile} />;
+      case 'profile':
+        return <Profile isMobile={isMobile} />;
 
       default:
         return <Home isMobile={isMobile} />;

@@ -279,7 +279,12 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           <span className='profile'>
             {isAuthenticated && (
               <>
-                <span className='username' onClick={'#'}>{user.nickname}</span>
+                <span
+                  className='username'
+                  onClick={() => handleClick('profile')}
+                >
+                  {user.nickname}
+                </span>
               </>
             )}
             {/* Username should be a hover dropdown of profile and logout */}
