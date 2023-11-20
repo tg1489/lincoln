@@ -38,22 +38,19 @@ export default function Profile() {
         </Col>
 
         <Col>
-          <section>
-            <h5>Shopping Cart</h5>
-            <h6>Items Inside: {cartCount}</h6>
-            <ul>
-              {Object.keys(cartData).map((cartId) => {
-                const { name, price, image } = cartData[cartId];
-                return (
-                  <li key={cartId}>
-                    {name}
-                    {price}
-                    {image}
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
+          <h5>Shopping Cart: {cartCount}</h5>
+
+          {Object.keys(cartData).map((cartId) => {
+            const { name, price, image } = cartData[cartId];
+
+            return (
+              <div key={cartId} className='shopping-cart'>
+                <strong>{name}</strong>
+                Price: ${price}
+                <img src={image} alt='cart image' />
+              </div>
+            );
+          })}
         </Col>
       </Row>
     </Container>
