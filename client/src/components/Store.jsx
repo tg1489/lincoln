@@ -5,7 +5,7 @@ import { storeImages } from '../utils/storeImages';
 import { useShoppingCart } from 'use-shopping-cart';
 import '../styles/Store.css';
 
-export default function Store({ isMobile }) {
+export default function Store({ isMobile, quantity }) {
   const [show, setShow] = useState(false);
   const [image, setImage] = useState('');
   const [title, setTitle] = useState('');
