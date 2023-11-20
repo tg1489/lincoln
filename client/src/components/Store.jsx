@@ -25,16 +25,34 @@ export default function Store({ isMobile }) {
   } = useShoppingCart();
 
   // Function to add to cart
-  const handleAddToCart = (id, name, price, image) => {
+  const handleAddToCart = (id, name, price, image, quantity) => {
+    // Get current localStorage data
+    const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
+
+    // Check if the item already exists
+    if (cartData[id]) {
+      cartData[id].quantity += 1;
+    } else {
+      // If it doesn't exist, add with a quantity of 1
+      cartData[id] = { id, name, price, image, quantity: 1 };
+    }
+
+    // Update localStorage with new cartData
+    localStorage.setItem('shoppingCart', JSON.stringify(cartData));
+
     addItem({
       id: id,
       name: name,
       price: price,
       image: image,
+      quantity: cartData[id].quantity,
     });
 
     // Save cart data to localStorage
-    const updatedCart = { ...cartDetails, [id]: { name, price, image } };
+    const updatedCart = {
+      ...cartDetails,
+      [id]: { name, price, image, quantity },
+    };
     localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
   };
 

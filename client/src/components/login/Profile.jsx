@@ -44,11 +44,22 @@ export default function Profile() {
             const { name, price, image } = cartData[cartId];
 
             return (
-              <div key={cartId} className='shopping-cart'>
-                <strong>{name}</strong>
-                Price: ${price}
-                <img src={image} alt='cart image' />
-              </div>
+              <Container key={cartId} className='shopping-cart'>
+                <Row className='shopping-cart-row'>
+                  <Col>
+                    <strong>{name}</strong>
+                  </Col>
+                  <Col>Price: ${price}</Col>
+                  <Col>
+                    {' '}
+                    <img
+                      className='shopping-cart-pic'
+                      src={image}
+                      alt='cart image'
+                    />
+                  </Col>
+                </Row>
+              </Container>
             );
           })}
         </Col>

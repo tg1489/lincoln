@@ -10,5 +10,14 @@
 }
 
 .shopping-cart {
+}
+
+.shopping-cart-row {
+  flex-direction: column;
   border: 2px solid var(--yellow);
+}
+
+.shopping-cart-pic {
+  height: 100px;
+  width: 100px;
 }
