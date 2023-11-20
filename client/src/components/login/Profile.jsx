@@ -5,7 +5,7 @@ import LogoutButton from './LogoutButton';
 import { useShoppingCart } from 'use-shopping-cart';
 import '../../styles/Profile.css';
 
-export default function Profile({ quantity }) {
+export default function Profile() {
   const { user, isAuthenticated } = useAuth0();
 
   // Shopping Cart
@@ -22,6 +22,8 @@ export default function Profile({ quantity }) {
 
   // Retreive shopping cart from localStorage
   const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
+
+  console.log(JSON.stringify(cartData));
 
   return (
     <Container className='profile-view'>

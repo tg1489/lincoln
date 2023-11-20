@@ -5,7 +5,7 @@ import { storeImages } from '../utils/storeImages';
 import { useShoppingCart } from 'use-shopping-cart';
 import '../styles/Store.css';
 
-export default function Store({ isMobile, quantity }) {
+export default function Store({ isMobile }) {
   const [show, setShow] = useState(false);
   const [image, setImage] = useState('');
   const [title, setTitle] = useState('');
@@ -26,8 +26,7 @@ export default function Store({ isMobile, quantity }) {
 
   // Function to add to cart
   const handleAddToCart = (id, name, price, image) => {
-    let quantity = 0;
-
+    // let quantity = 0;
     // Get current localStorage data
     const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
 
@@ -52,7 +51,7 @@ export default function Store({ isMobile, quantity }) {
     // Save cart data to localStorage
     const updatedCart = {
       ...cartDetails,
-      [id]: { name, price, image, quantity },
+      [id]: { name, price, image, quantity: cartData[id].quantity },
     };
     localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
   };

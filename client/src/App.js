@@ -53,7 +53,6 @@ const client = new ApolloClient({
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isMobile, setIsMobile] = useState(false);
-  const [quantity, setQuantity] = useState(0);
 
   // Page Changes
   const handlePageChange = (page) => setCurrentPage(page);
@@ -74,7 +73,7 @@ function App() {
       case 'fundraising':
         return <Fundraising isMobile={isMobile} />;
       case 'store':
-        return <Store isMobile={isMobile} quantity={quantity} />;
+        return <Store isMobile={isMobile} />;
       case 'volunteers':
         return <Volunteers isMobile={isMobile} />;
       case 'about':
@@ -82,7 +81,7 @@ function App() {
       case 'login':
         return <Login isMobile={isMobile} />;
       case 'profile':
-        return <Profile isMobile={isMobile} quantity={quantity} />;
+        return <Profile isMobile={isMobile} />;
 
       default:
         return <Home isMobile={isMobile} />;
