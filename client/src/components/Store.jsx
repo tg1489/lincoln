@@ -57,6 +57,12 @@ export default function Store({ isMobile }) {
     localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
   };
 
+  // Clear Cart Items
+  const handleClearCart = () => {
+    clearCart();
+    localStorage.removeItem('shoppingCart');
+  };
+
   const handleShow = (e) => {
     setImage(e.currentTarget.childNodes[0].src);
     setTitle(e.currentTarget.childNodes[1].childNodes[0].innerText);
@@ -103,7 +109,7 @@ export default function Store({ isMobile }) {
           </Col>
 
           <Col>
-            <button onClick={clearCart}>Clear Cart</button>
+            <button onClick={handleClearCart}>Clear Cart</button>
           </Col>
         </Row>
         <Row className={`membership mt-5 mb-5`}>
