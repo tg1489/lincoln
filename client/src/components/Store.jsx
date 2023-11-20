@@ -12,20 +12,16 @@ export default function Store({ isMobile }) {
   const [price, setPrice] = useState('');
   const [paragraph, setParagraph] = useState('');
 
-  // Cart Information
-  // const [cartName, setCartName] = useState('');
-  // const [cartPrice, setCartPrice] = useState(null);
-  // const [cartImage, setCartImage] = useState(null);
-
   // Shopping Cart
   const {
     addItem,
-    removeItem,
     cartCount,
-    clearCart,
-    totalPrice,
     cartDetails,
-    redirectToCheckout,
+    totalPrice,
+    incrementItem,
+    decrementItem,
+    removeItem,
+    clearCart,
   } = useShoppingCart();
 
   // Function to add to cart

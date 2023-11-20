@@ -5,6 +5,7 @@ import Profile from './login/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
 import lion from '../assets/lion-logo2.png';
 import cart from '../assets/shopping-cart-outline-svgrepo-com.svg';
+import { useShoppingCart } from 'use-shopping-cart';
 import '../styles/Profile.css';
 import '../styles/Header.css';
 
@@ -32,6 +33,18 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
 
   const { isLoading, error } = useAuth0();
   const { user, isAuthenticated } = useAuth0();
+
+  // Shopping Cart
+  const {
+    addItem,
+    cartCount,
+    cartDetails,
+    totalPrice,
+    incrementItem,
+    decrementItem,
+    removeItem,
+    clearCart,
+  } = useShoppingCart();
 
   // Update the activeTab state when the current prop changes
   useEffect(() => {
@@ -287,10 +300,6 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
                 </span>
               </>
             )}
-            {/* Username should be a hover dropdown of profile and logout */}
-            {/* When user clicks on username, goes to profile page */}
-            {/* Profile page will give them the option to log out too */}
-            {/* <Profile /> */}
           </span>
         </div>
       </div>

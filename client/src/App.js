@@ -21,7 +21,6 @@ import {
 } from '@apollo/client';
 import { CartProvider } from 'use-shopping-cart';
 import { setContext } from '@apollo/client/link/context';
-import { useShoppingCart } from 'use-shopping-cart';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'react-bootstrap';

@@ -1,3 +1,12 @@
 .profile-view {
   height: 100vh;
 }
+
+.profile-row {
+  margin-top: 1rem;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+
