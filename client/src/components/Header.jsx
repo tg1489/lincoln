@@ -262,9 +262,13 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           {isMobile ? (
             <li className='nav-item'>
               <img src={cart} className='shopping-cart-image mx-2' />
+              <span>{cartCount}</span>
             </li>
           ) : (
-            <img src={cart} className='shopping-cart-image mx-2' />
+            <>
+              <img src={cart} className='shopping-cart-image mx-2' />
+              <span>{cartCount}</span>
+            </>
           )}
 
           {/* Login */}

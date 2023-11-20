@@ -23,7 +23,6 @@ export default function Profile() {
   // Retreive shopping cart from localStorage
   const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
 
-  console.log(JSON.stringify(cartData));
 
   return (
     <Container className='profile-view'>
