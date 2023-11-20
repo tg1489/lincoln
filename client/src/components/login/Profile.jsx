@@ -20,6 +20,9 @@ export default function Profile() {
     clearCart,
   } = useShoppingCart();
 
+  // Retreive shopping cart from localStorage
+  const cartData = JSON.parse(localStorage.getItem('shoppingCart') || {});
+
   return (
     <Container className='profile-view'>
       <Row className='profile-row'>
@@ -38,8 +41,18 @@ export default function Profile() {
           <section>
             <h5>Shopping Cart</h5>
             <h6>Items Inside: {cartCount}</h6>
-
-            {/* Add your shopping cart content here */}
+            <ul>
+              {Object.keys(cartData).map((cartId) => {
+                const { name, price, image } = cartData[cartId];
+                return (
+                  <li key={cartId}>
+                    {name}
+                    {price}
+                    {image}
+                  </li>
+                );
+              })}
+            </ul>
           </section>
         </Col>
       </Row>

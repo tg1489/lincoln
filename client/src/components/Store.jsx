@@ -33,7 +33,9 @@ export default function Store({ isMobile }) {
       image: image,
     });
 
-    console.log(`name: ${name} price: ${price} image: ${image}`);
+    // Save cart data to localStorage
+    const updatedCart = { ...cartDetails, [id]: { name, price, image } };
+    localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
   };
 
   const handleShow = (e) => {
@@ -68,7 +70,7 @@ export default function Store({ isMobile }) {
                 {Object.values(cartDetails).map((item) => (
                   <li>
                     {item.name} - {item.formattedValue} - Quantity:{' '}
-                    {item.quantity}
+                    {item.quantity} - {item.image}
                     <button
                       className='remove-item'
                       onClick={() => removeItem(item.id)}
