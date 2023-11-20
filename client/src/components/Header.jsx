@@ -277,7 +277,11 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           </span>
           {/* Profile */}
           <span className='profile'>
-            {isAuthenticated && <>{user.nickname}</>}
+            {isAuthenticated && (
+              <>
+                <span className='username' onClick={'#'}>{user.nickname}</span>
+              </>
+            )}
             {/* Username should be a hover dropdown of profile and logout */}
             {/* When user clicks on username, goes to profile page */}
             {/* Profile page will give them the option to log out too */}
