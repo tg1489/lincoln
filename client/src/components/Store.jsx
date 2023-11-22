@@ -221,6 +221,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Lincoln Pride Full Zipper Hoodie</Card.Title>
                   <Card.Subtitle>$25.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        4,
+                        'Lincoln Pride Full Zipper Hoodie',
+                        25,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -240,6 +252,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Lincoln Pride Pull Over Hoodie</Card.Title>
                   <Card.Subtitle>$22.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        5,
+                        'Lincoln Pride Pull Over Hoodie',
+                        22,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -259,6 +283,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Tie-Dye Short Sleeve Shirt</Card.Title>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        6,
+                        'Tie-Dye Short Sleeve Shirt',
+                        15,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -272,6 +308,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Linc the Lion Plush Toy</Card.Title>
                   <Card.Subtitle>$5.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        7,
+                        'Linc the Lion Plush Toy',
+                        5,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -285,6 +333,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Birthday Board!</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        8,
+                        'Birthday Board!',
+                        10,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -298,6 +358,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Sponsorship</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        9,
+                        'Sponsorship',
+                        10,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -315,6 +387,18 @@ export default function Store({ isMobile }) {
                     $10.00
                   </Card.Subtitle>
                   <Card.Subtitle>$8.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        10,
+                        'Short Sleeve T-Shirts',
+                        8,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -332,6 +416,18 @@ export default function Store({ isMobile }) {
                     $15.00
                   </Card.Subtitle>
                   <Card.Subtitle>$10.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        11,
+                        'Long Sleeve T-Shirts',
+                        10,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -349,6 +445,18 @@ export default function Store({ isMobile }) {
                     $22.00
                   </Card.Subtitle>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        12,
+                        'Hoodie Sweatshirts',
+                        15,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -372,6 +480,18 @@ export default function Store({ isMobile }) {
                     $20.00
                   </Card.Subtitle>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        13,
+                        'Sweatpants',
+                        15,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -389,6 +509,18 @@ export default function Store({ isMobile }) {
                     $25.00
                   </Card.Subtitle>
                   <Card.Subtitle>$20.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        14,
+                        'Full Zipper Hoodie Sweatshirt',
+                        25,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -402,6 +534,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>STAFF ONLY - Polo T-Shirt</Card.Title>
                   <Card.Subtitle>$18.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        15,
+                        'STAFF ONLY - Polo T-Shirt',
+                        18,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -421,6 +565,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>STAFF ONLY - Fleece Jacket</Card.Title>
                   <Card.Subtitle>$25.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        16,
+                        'STAFF ONLY - Fleece Jacket',
+                        25,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
