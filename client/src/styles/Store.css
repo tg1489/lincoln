@@ -76,6 +76,24 @@ span.membership-link {
   margin-right: 75%;
 }
 
+.text-space {
+  height: 48px;
+}
+
+/* Images with title that takes up 2 lines */
+.text-space2 {
+  height: 23.5px;
+}
+
+/* Images with sales */
+.text-space3 {
+  height: 31px;
+}
+
+.text-space4 {
+  height: 6px;
+}
+
 div.card-body {
   height: 180px;
 }
@@ -93,6 +111,10 @@ div.card-footer:hover {
 .card-image {
   height: 39.3vh;
   /* width: 19.3vw; */
+}
+
+.card-image2 {
+  height: 33.5vh;
 }
 
 /* Shopping Cart */

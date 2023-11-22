@@ -137,7 +137,9 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Membership</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
-                  <Card.Text>Standard PTO Family Membership 2023-24</Card.Text>
+                  <Card.Text className='text-space'>
+                    Standard PTO Family Membership 2023-24
+                  </Card.Text>
                   <Card.Footer
                     onClick={() => {
                       handleAddToCart(1, 'Membership', 10, school);
@@ -158,7 +160,9 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Staff Membership</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
-                  <Card.Text>Staff PTO Family Membership 2023-24</Card.Text>
+                  <Card.Text className='text-space'>
+                    Staff PTO Family Membership 2023-24
+                  </Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -190,6 +194,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Cinch Pack</Card.Title>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Text className='text-space'></Card.Text>
 
                   <Card.Footer
                     onClick={(e) => {
@@ -222,7 +227,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Lincoln Pride Full Zipper Hoodie</Card.Title>
                   <Card.Subtitle>$25.00</Card.Subtitle>
-
+                  <Card.Text className='text-space2'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -254,6 +259,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Lincoln Pride Pull Over Hoodie</Card.Title>
                   <Card.Subtitle>$22.00</Card.Subtitle>
+                  <Card.Text className='text-space2'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -285,6 +291,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Tie-Dye Short Sleeve Shirt</Card.Title>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Text className='text-space2'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -310,6 +317,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Linc the Lion Plush Toy</Card.Title>
                   <Card.Subtitle>$5.00</Card.Subtitle>
+                  <Card.Text className='text-space'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -335,6 +343,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Birthday Board!</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
+                  <Card.Text className='text-space'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -360,6 +369,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Sponsorship</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
+                  <Card.Text className='text-space'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -380,7 +390,7 @@ export default function Store({ isMobile }) {
               <Card key={10} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
-                  className='card-image image-board'
+                  className='card-image2 image-board'
                   src={storeImages[11].src}
                 ></Card.Img>
                 <Card.Body>
@@ -389,6 +399,7 @@ export default function Store({ isMobile }) {
                     $10.00
                   </Card.Subtitle>
                   <Card.Subtitle>$8.00</Card.Subtitle>
+                  <Card.Text className='text-space3'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -409,7 +420,7 @@ export default function Store({ isMobile }) {
               <Card key={11} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
-                  className='card-image image-board'
+                  className='card-image2 image-board'
                   src={storeImages[10].src}
                 ></Card.Img>
                 <Card.Body>
@@ -418,6 +429,7 @@ export default function Store({ isMobile }) {
                     $15.00
                   </Card.Subtitle>
                   <Card.Subtitle>$10.00</Card.Subtitle>
+                  <Card.Text className='text-space3'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -438,7 +450,7 @@ export default function Store({ isMobile }) {
               <Card key={12} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
-                  className='card-image image-board'
+                  className='card-image2 image-board'
                   src={storeImages[5].src}
                 ></Card.Img>
                 <Card.Body>
@@ -447,6 +459,7 @@ export default function Store({ isMobile }) {
                     $22.00
                   </Card.Subtitle>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Text className='text-space3'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -467,7 +480,7 @@ export default function Store({ isMobile }) {
               <Card key={13} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
-                  className='card-image image-board'
+                  className='card-image2 image-board'
                   src={storeImages[17].src}
                   onMouseEnter={(e) =>
                     (e.currentTarget.src = storeImages[18].src)
@@ -482,6 +495,7 @@ export default function Store({ isMobile }) {
                     $20.00
                   </Card.Subtitle>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Text className='text-space3'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -502,7 +516,7 @@ export default function Store({ isMobile }) {
               <Card key={14} className={isMobile ? '' : 'store-card'}>
                 <Card.Text className='sale'>Sale</Card.Text>
                 <Card.Img
-                  className='card-image image-board'
+                  className='card-image2 image-board'
                   src={storeImages[4].src}
                 ></Card.Img>
                 <Card.Body>
@@ -511,6 +525,7 @@ export default function Store({ isMobile }) {
                     $25.00
                   </Card.Subtitle>
                   <Card.Subtitle>$20.00</Card.Subtitle>
+                  <Card.Text className='text-space4'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -536,6 +551,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>STAFF ONLY - Polo T-Shirt</Card.Title>
                   <Card.Subtitle>$18.00</Card.Subtitle>
+                  <Card.Text className='text-space2'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -567,6 +583,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>STAFF ONLY - Fleece Jacket</Card.Title>
                   <Card.Subtitle>$25.00</Card.Subtitle>
+                  <Card.Text className='text-space2'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
