@@ -50,7 +50,7 @@ span.membership-link {
   cursor: pointer;
   /* Need 70vh for cards to lineup from top to bottom */
   /* height: 75vh !important; */
-  height: 515px;
+  /* height: 515px; */
 }
 
 .myCol {
@@ -60,6 +60,10 @@ span.membership-link {
 
 .image-board {
   height: 300px;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .strikethrough {
@@ -72,6 +76,10 @@ span.membership-link {
   margin-right: 75%;
 }
 
+div.card-body {
+  height: 180px;
+}
+
 div.card-footer {
   /* background-color: black; */
   transition: background-color 0.3s ease !important;
@@ -80,6 +88,11 @@ div.card-footer {
 div.card-footer:hover {
   background-color: var(--yellow) !important;
   color: #fff !important;
+}
+
+.card-image {
+  height: 39.3vh;
+  /* width: 19.3vw; */
 }
 
 /* Shopping Cart */

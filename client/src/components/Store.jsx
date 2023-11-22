@@ -190,6 +190,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Cinch Pack</Card.Title>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
@@ -221,6 +222,7 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Lincoln Pride Full Zipper Hoodie</Card.Title>
                   <Card.Subtitle>$25.00</Card.Subtitle>
+
                   <Card.Footer
                     onClick={(e) => {
                       handleAddToCart(
