@@ -75,3 +75,12 @@ a {
   color: #fff;
   cursor: pointer;
 }
+
+.cart-bubble {
+  border: 1px solid red;
+  border-radius: 50px;
+  background-color: red;
+  color: #fff;
+  width: 25px;
+  height: 27px;
+}
