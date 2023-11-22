@@ -115,10 +115,6 @@ export default function Store({ isMobile }) {
                           'shoppingCart',
                           JSON.stringify(cartData)
                         );
-
-                        // Log the updated cartDetails and localStorage
-                        console.log(cartDetails);
-                        console.log(`cart - ${JSON.stringify(cartData)}`);
                       }}
                     >
                       Remove From Cart
@@ -163,6 +159,18 @@ export default function Store({ isMobile }) {
                   <Card.Title>Staff Membership</Card.Title>
                   <Card.Subtitle>$10.00</Card.Subtitle>
                   <Card.Text>Staff PTO Family Membership 2023-24</Card.Text>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        2,
+                        'Staff Membership',
+                        10,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
@@ -182,6 +190,18 @@ export default function Store({ isMobile }) {
                 <Card.Body>
                   <Card.Title>Cinch Pack</Card.Title>
                   <Card.Subtitle>$15.00</Card.Subtitle>
+                  <Card.Footer
+                    onClick={(e) => {
+                      handleAddToCart(
+                        3,
+                        'Staff Membership',
+                        15,
+                        e.target.parentNode.parentNode.childNodes[0].src
+                      );
+                    }}
+                  >
+                    Add To Cart
+                  </Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
