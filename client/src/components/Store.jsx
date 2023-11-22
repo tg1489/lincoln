@@ -95,7 +95,7 @@ export default function Store({ isMobile }) {
                 {Object.values(cartDetails).map((item) => (
                   <li>
                     {item.name} - {item.formattedValue} - Quantity:{' '}
-                    {item.quantity} - {item.image}
+                    {item.quantity} - <img src={item.image} />
                     <button
                       className='remove-item'
                       onClick={() => {
