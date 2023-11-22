@@ -261,7 +261,7 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
           {/* Shopping Cart */}
           {isMobile ? (
             <span className='nav-item'>
-              <span className={cartCount === 0 ? '' : 'cart-bubble'}>
+              <span className={cartCount === 0 ? '' : 'mobile-cart-bubble'}>
                 {cartCount === 0 ? <></> : <>{cartCount}</>}
               </span>
               <img src={cart} className='shopping-cart-image mx-2' />
