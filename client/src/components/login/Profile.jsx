@@ -23,7 +23,6 @@ export default function Profile() {
   // Retreive shopping cart from localStorage
   const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
 
-
   return (
     <Container className='profile-view'>
       <Row className='profile-row'>
@@ -44,6 +43,7 @@ export default function Profile() {
           {Object.keys(cartData).map((cartId) => {
             const { name, price, image, quantity } = cartData[cartId];
 
+            // Below shows saved shopping cart contents
             return (
               <Container key={cartId} className='shopping-cart'>
                 <Row className='shopping-cart-row'>

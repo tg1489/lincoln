@@ -54,6 +54,7 @@ export default function Store({ isMobile }) {
       [id]: { name, price, image, quantity: cartData[id].quantity },
     };
     localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
+    // console.log(JSON.stringify(localStorage.getItem('shoppingCart')))
   };
 
   // Clear Cart Items
@@ -97,7 +98,28 @@ export default function Store({ isMobile }) {
                     {item.quantity} - {item.image}
                     <button
                       className='remove-item'
-                      onClick={() => removeItem(item.id)}
+                      onClick={() => {
+                        // Remove the item from the cart using removeItem
+                        removeItem(item.id);
+
+                        // Get the current localStorage data
+                        const cartData =
+                          JSON.parse(localStorage.getItem('shoppingCart')) ||
+                          {};
+
+                        // Remove the quantity information for the specific item
+                        delete cartData[item.id];
+
+                        // Update localStorage with the modified cartData
+                        localStorage.setItem(
+                          'shoppingCart',
+                          JSON.stringify(cartData)
+                        );
+
+                        // Log the updated cartDetails and localStorage
+                        console.log(cartDetails);
+                        console.log(`cart - ${JSON.stringify(cartData)}`);
+                      }}
                     >
                       Remove From Cart
                     </button>
