@@ -48,16 +48,12 @@ export default function Profile() {
               <Container key={cartId} className='shopping-cart'>
                 <Row className='shopping-cart-row'>
                   <Col>
-                    <strong>
-                      {name} - {quantity}
-                    </strong>
-                  </Col>
-                  <Col>
                     Price:{' '}
                     {Object.values(cartDetails).map((item) => {
                       return item.formattedValue;
                     })}
                   </Col>
+
                   <Col>
                     {' '}
                     <img
@@ -65,6 +61,48 @@ export default function Profile() {
                       src={image}
                       alt='cart image'
                     />
+                  </Col>
+                  <Col>
+                    <strong>
+                      {name} - {quantity}
+                    </strong>
+                    {Object.values(cartDetails).map((item) => {
+                      return (
+                        <button
+                          onClick={() => {
+                            const updatedQuantity = item.quantity - 1;
+
+                            // Update the shopping cart
+                            if (updatedQuantity > 0) {
+                              decrementItem(item.id);
+                            } else {
+                              // If the quantity becomes zero, remove the item from the cart
+                              removeItem(item.id);
+                            }
+
+                            // Update localStorage
+                            const updatedCartData = {
+                              ...cartData,
+                              [item.id]: {
+                                ...item,
+                                quantity: updatedQuantity,
+                              },
+                            };
+
+                            localStorage.setItem(
+                              'shoppingCart',
+                              JSON.stringify(updatedCartData)
+                            );
+
+                            // Log the updated quantities
+                            console.log(`before: ${item.quantity}`);
+                            console.log(`after: ${updatedQuantity}`);
+                          }}
+                        >
+                          Remove Item
+                        </button>
+                      );
+                    })}
                   </Col>
                 </Row>
               </Container>
