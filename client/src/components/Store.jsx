@@ -26,7 +26,6 @@ export default function Store({ isMobile }) {
 
   // Function to add to cart
   const handleAddToCart = (id, name, price, image) => {
-    // let quantity = 0;
     // Get current localStorage data
     const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
 
@@ -54,7 +53,6 @@ export default function Store({ isMobile }) {
       [id]: { name, price, image, quantity: cartData[id].quantity },
     };
     localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
-    // console.log(JSON.stringify(localStorage.getItem('shoppingCart')))
   };
 
   // Clear Cart Items

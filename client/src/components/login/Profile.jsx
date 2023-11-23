@@ -52,7 +52,12 @@ export default function Profile() {
                       {name} - {quantity}
                     </strong>
                   </Col>
-                  <Col>Price: ${price}</Col>
+                  <Col>
+                    Price:{' '}
+                    {Object.values(cartDetails).map((item) => {
+                      return item.formattedValue;
+                    })}
+                  </Col>
                   <Col>
                     {' '}
                     <img
