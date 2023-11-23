@@ -66,47 +66,44 @@ export default function Profile() {
                     <strong>
                       {name} - {quantity}
                     </strong>
-                    {Object.values(cartDetails).map((item) => {
-                      return (
-                        <button
-                          onClick={() => {
-                            const updatedQuantity = item.quantity - 1;
 
-                            // Update the shopping cart
-                            if (updatedQuantity > 0) {
-                              decrementItem(item.id);
-                            } else {
-                              // If the quantity becomes zero, remove the item from the cart
-                              removeItem(item.id);
-                            }
+                    <button
+                      onClick={() => {
+                        const updatedQuantity = quantity - 1;
 
-                            // Update localStorage
-                            const updatedCartData = { ...cartData };
-                            if (updatedQuantity > 0) {
-                              // If quantity is greater than 0, update the quantity
-                              updatedCartData[item.id] = {
-                                ...item,
-                                quantity: updatedQuantity,
-                              };
-                            } else {
-                              // If quantity is 0, remove the item from localStorage
-                              delete updatedCartData[item.id];
-                            }
+                        // Update the shopping cart
+                        if (updatedQuantity > 0) {
+                          decrementItem(cartId);
+                        } else {
+                          // If the quantity becomes zero, remove the item from the cart
+                          removeItem(cartId);
+                        }
 
-                            localStorage.setItem(
-                              'shoppingCart',
-                              JSON.stringify(updatedCartData)
-                            );
+                        // Update localStorage
+                        const updatedCartData = { ...cartData };
+                        if (updatedQuantity > 0) {
+                          // If quantity is greater than 0, update the quantity
+                          updatedCartData[cartId] = {
+                            ...cartData[cartId],
+                            quantity: updatedQuantity,
+                          };
+                        } else {
+                          // If quantity is 0, remove the item from localStorage
+                          delete updatedCartData[cartId];
+                        }
 
-                            // Log the updated quantities
-                            console.log(`before: ${item.quantity}`);
-                            console.log(`after: ${updatedQuantity}`);
-                          }}
-                        >
-                          Remove Item
-                        </button>
-                      );
-                    })}
+                        localStorage.setItem(
+                          'shoppingCart',
+                          JSON.stringify(updatedCartData)
+                        );
+
+                        // Log the updated quantities
+                        console.log(`before: ${quantity}`);
+                        console.log(`after: ${updatedQuantity}`);
+                      }}
+                    >
+                      Remove Item
+                    </button>
                   </Col>
                 </Row>
               </Container>
