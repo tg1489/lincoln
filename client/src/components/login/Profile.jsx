@@ -47,7 +47,10 @@ export default function Profile() {
             return (
               <Container key={cartId} className='shopping-cart'>
                 <Row className='shopping-cart-row'>
-                  <Col>Price: {cartDetails[cartId].formattedValue}</Col>
+                  <Col>
+                    Price:{' '}
+                    {cartDetails[cartId] && cartDetails[cartId].formattedValue}
+                  </Col>
 
                   <Col>
                     {' '}

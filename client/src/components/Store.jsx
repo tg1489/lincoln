@@ -198,7 +198,7 @@ export default function Store({ isMobile }) {
                     onClick={(e) => {
                       handleAddToCart(
                         3,
-                        'Staff Membership',
+                        'Cinch Pack',
                         15,
                         e.target.parentNode.parentNode.childNodes[0].src
                       );
