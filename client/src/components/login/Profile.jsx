@@ -81,13 +81,17 @@ export default function Profile() {
                             }
 
                             // Update localStorage
-                            const updatedCartData = {
-                              ...cartData,
-                              [item.id]: {
+                            const updatedCartData = { ...cartData };
+                            if (updatedQuantity > 0) {
+                              // If quantity is greater than 0, update the quantity
+                              updatedCartData[item.id] = {
                                 ...item,
                                 quantity: updatedQuantity,
-                              },
-                            };
+                              };
+                            } else {
+                              // If quantity is 0, remove the item from localStorage
+                              delete updatedCartData[item.id];
+                            }
 
                             localStorage.setItem(
                               'shoppingCart',
