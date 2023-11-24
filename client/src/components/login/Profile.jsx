@@ -74,7 +74,14 @@ export default function Profile() {
                   </Col>
                   {/* Price */}
                   <Col>
-                    {cartDetails[cartId] && cartDetails[cartId].formattedValue}
+                    <span className='price'>
+                      {cartDetails[cartId] &&
+                        cartDetails[cartId].formattedValue}
+                    </span>
+                  </Col>
+                  {/* Quantity */}
+                  <Col>
+                  
                   </Col>
 
                   <Col>
