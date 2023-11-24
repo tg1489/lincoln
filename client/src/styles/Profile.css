@@ -13,7 +13,7 @@
 }
 
 .shopping-cart-row {
-  flex-direction: column;
+  flex-direction: column !important;
   border: 2px solid var(--yellow);
 }
 

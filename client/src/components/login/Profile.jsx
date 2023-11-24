@@ -45,6 +45,7 @@ export default function Profile() {
 
         <Col>
           <h5>Shopping Cart: {cartCount}</h5>
+          <button onClick={handleClearCart}>Clear Cart</button>
 
           {Object.keys(cartData).map((cartId) => {
             const { name, price, image, quantity } = cartData[cartId];
@@ -66,11 +67,13 @@ export default function Profile() {
                       alt='cart image'
                     />
                   </Col>
+
                   <Col>
                     <strong>
                       {name} - {quantity}
                     </strong>
-
+                  </Col>
+                  <Col>
                     <button
                       onClick={() => {
                         const updatedQuantity = quantity - 1;
@@ -108,8 +111,6 @@ export default function Profile() {
                     >
                       Remove Item
                     </button>
-
-                    <button onClick={handleClearCart}>Clear Cart</button>
                   </Col>
                 </Row>
               </Container>
