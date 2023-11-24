@@ -352,11 +352,12 @@ export default function Store({ isMobile }) {
                   <Card.Text className='text-space3'></Card.Text>
                   <Card.Footer
                     onClick={(e) => {
+                      console.log(storeImages[11].src);
                       handleAddToCart(
                         10,
                         'Short Sleeve T-Shirts',
                         8,
-                        e.target.parentNode.parentNode.childNodes[0].src
+                        storeImages[11].src
                       );
                     }}
                   >
@@ -386,7 +387,7 @@ export default function Store({ isMobile }) {
                         11,
                         'Long Sleeve T-Shirts',
                         10,
-                        e.target.parentNode.parentNode.childNodes[0].src
+                        storeImages[10].src
                       );
                     }}
                   >
@@ -416,7 +417,7 @@ export default function Store({ isMobile }) {
                         12,
                         'Hoodie Sweatshirts',
                         15,
-                        e.target.parentNode.parentNode.childNodes[0].src
+                        storeImages[5].src
                       );
                     }}
                   >
@@ -452,7 +453,7 @@ export default function Store({ isMobile }) {
                         13,
                         'Sweatpants',
                         15,
-                        e.target.parentNode.parentNode.childNodes[0].src
+                        storeImages[17].src
                       );
                     }}
                   >
@@ -482,7 +483,7 @@ export default function Store({ isMobile }) {
                         14,
                         'Full Zipper Hoodie Sweatshirt',
                         25,
-                        e.target.parentNode.parentNode.childNodes[0].src
+                        storeImages[4].src
                       );
                     }}
                   >
@@ -508,7 +509,7 @@ export default function Store({ isMobile }) {
                         15,
                         'STAFF ONLY - Polo T-Shirt',
                         18,
-                        e.target.parentNode.parentNode.childNodes[0].src
+                        storeImages[4].src
                       );
                     }}
                   >
