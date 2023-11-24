@@ -44,7 +44,8 @@ export default function Profile() {
         </Col>
 
         <Col>
-          <h5>Shopping Cart: {cartCount}</h5>
+          <h5>Shopping Cart</h5>
+          <h6>You have {cartCount} items in your cart</h6>
           {cartCount === 0 ? (
             ''
           ) : (
@@ -59,11 +60,6 @@ export default function Profile() {
               <Container key={cartId} className='shopping-cart'>
                 <Row className='shopping-cart-row'>
                   <Col>
-                    Price:{' '}
-                    {cartDetails[cartId] && cartDetails[cartId].formattedValue}
-                  </Col>
-
-                  <Col>
                     {' '}
                     <img
                       className='shopping-cart-pic'
@@ -71,12 +67,16 @@ export default function Profile() {
                       alt='cart image'
                     />
                   </Col>
-
                   <Col>
                     <strong>
                       {name} - {quantity}
                     </strong>
                   </Col>
+                  {/* Price */}
+                  <Col>
+                    {cartDetails[cartId] && cartDetails[cartId].formattedValue}
+                  </Col>
+
                   <Col>
                     <button
                       onClick={() => {

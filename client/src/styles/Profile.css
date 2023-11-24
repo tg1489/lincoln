@@ -13,11 +13,10 @@
 }
 
 .shopping-cart-row {
-  flex-direction: column !important;
-  border: 2px solid var(--yellow);
+  flex-direction: row;
 }
 
 .shopping-cart-pic {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
