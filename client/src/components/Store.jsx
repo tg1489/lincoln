@@ -520,13 +520,7 @@ export default function Store({ isMobile }) {
             </Col>
 
             <Col className='myCol' md={3}>
-              <Card
-                key={16}
-                className={isMobile ? '' : 'store-card'}
-                onClick={(e) => {
-                  handleShow(e);
-                }}
-              >
+              <Card key={16} className={isMobile ? '' : 'store-card'}>
                 <Card.Img
                   className='card-image image-board'
                   src={storeImages[13].src}
@@ -553,9 +547,7 @@ export default function Store({ isMobile }) {
           </>
         </Row>
 
-        {/* Make a switch using title */}
-
-        <Modal show={show} onHide={() => setShow(false)}>
+        {/* <Modal show={show} onHide={() => setShow(false)}>
           <Modal.Header closeButton>
             <Modal.Title>{title}</Modal.Title>
             <Modal.Body>
@@ -563,7 +555,7 @@ export default function Store({ isMobile }) {
               {price}
             </Modal.Body>
           </Modal.Header>
-        </Modal>
+        </Modal> */}
       </Container>
     </div>
   );
