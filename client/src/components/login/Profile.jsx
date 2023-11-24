@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from './LogoutButton';
 import { useShoppingCart } from 'use-shopping-cart';
+import trash from '../../assets/trash.png';
 import '../../styles/Profile.css';
 
 export default function Profile() {
@@ -68,9 +69,7 @@ export default function Profile() {
                     />
                   </Col>
                   <Col>
-                    <strong>
-                      {name} - {quantity}
-                    </strong>
+                    <strong>{name}</strong>
                   </Col>
                   {/* Price */}
                   <Col>
@@ -81,11 +80,13 @@ export default function Profile() {
                   </Col>
                   {/* Quantity */}
                   <Col>
-                  
+                    <span className='quantity'>{quantity}</span>
                   </Col>
 
                   <Col>
-                    <button
+                    <img
+                      className='trash'
+                      src={trash}
                       onClick={() => {
                         const updatedQuantity = quantity - 1;
 
@@ -119,9 +120,7 @@ export default function Profile() {
                         console.log(`before: ${quantity}`);
                         console.log(`after: ${updatedQuantity}`);
                       }}
-                    >
-                      Remove Item
-                    </button>
+                    />
                   </Col>
                 </Row>
               </Container>

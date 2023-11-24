@@ -24,3 +24,13 @@
 span.price {
   font-size: 20px;
 }
+
+span.quantity {
+  font-size: 20px;
+}
+
+img.trash {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
