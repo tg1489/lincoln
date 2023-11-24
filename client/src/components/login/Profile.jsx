@@ -45,7 +45,11 @@ export default function Profile() {
 
         <Col>
           <h5>Shopping Cart: {cartCount}</h5>
-          <button onClick={handleClearCart}>Clear Cart</button>
+          {cartCount === 0 ? (
+            ''
+          ) : (
+            <button onClick={handleClearCart}>Clear Cart</button>
+          )}
 
           {Object.keys(cartData).map((cartId) => {
             const { name, price, image, quantity } = cartData[cartId];
