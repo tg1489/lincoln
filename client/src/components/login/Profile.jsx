@@ -23,6 +23,12 @@ export default function Profile() {
   // Retreive shopping cart from localStorage
   const cartData = JSON.parse(localStorage.getItem('shoppingCart')) || {};
 
+  // Clear Cart Items
+  const handleClearCart = () => {
+    clearCart();
+    localStorage.removeItem('shoppingCart');
+  };
+
   return (
     <Container className='profile-view'>
       <Row className='profile-row'>
@@ -102,6 +108,8 @@ export default function Profile() {
                     >
                       Remove Item
                     </button>
+
+                    <button onClick={handleClearCart}>Clear Cart</button>
                   </Col>
                 </Row>
               </Container>

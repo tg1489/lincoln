@@ -55,12 +55,6 @@ export default function Store({ isMobile }) {
     localStorage.setItem('shoppingCart', JSON.stringify(updatedCart));
   };
 
-  // Clear Cart Items
-  const handleClearCart = () => {
-    clearCart();
-    localStorage.removeItem('shoppingCart');
-  };
-
   const handleShow = (e) => {
     setImage(e.currentTarget.childNodes[0].src);
     setTitle(e.currentTarget.childNodes[1].childNodes[0].innerText);
@@ -83,48 +77,6 @@ export default function Store({ isMobile }) {
         <Row>
           <Col>
             Cart Count: <span className='cart-count'>{cartCount}</span>
-          </Col>
-          <Col>
-            Cart Details:
-            {Object.keys(cartDetails).length === 0 ? (
-              <p>Your cart is empty</p>
-            ) : (
-              <ul>
-                {Object.values(cartDetails).map((item) => (
-                  <li>
-                    {item.name} - {item.formattedValue} - Quantity:{' '}
-                    {item.quantity} - <img src={item.image} />
-                    <button
-                      className='remove-item'
-                      onClick={() => {
-                        // Remove the item from the cart using removeItem
-                        removeItem(item.id);
-
-                        // Get the current localStorage data
-                        const cartData =
-                          JSON.parse(localStorage.getItem('shoppingCart')) ||
-                          {};
-
-                        // Remove the quantity information for the specific item
-                        delete cartData[item.id];
-
-                        // Update localStorage with the modified cartData
-                        localStorage.setItem(
-                          'shoppingCart',
-                          JSON.stringify(cartData)
-                        );
-                      }}
-                    >
-                      Remove From Cart
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </Col>
-
-          <Col>
-            <button onClick={handleClearCart}>Clear Cart</button>
           </Col>
         </Row>
         <Row className={`membership mt-5 mb-5`}>
