@@ -10,8 +10,16 @@ export default function Profile() {
   const { user, isAuthenticated } = useAuth0();
   const [showModal, setShowModal] = useState(false);
 
-  const handleShowModal = () => setShowModal(true);
-  const handleHideModal = () => setShowModal(false);
+  const handleShowModal = () => {
+    console.log(`handleShowModal activated`);
+    console.log(`showModal: ${showModal}`);
+
+    setShowModal(true);
+  };
+  const handleHideModal = () => {
+    console.log(`handleHideModal activated`);
+    setShowModal(false);
+  };
 
   // Shopping Cart
   const {
@@ -148,7 +156,7 @@ export default function Profile() {
         </Col>
       </Row>
 
-      <Modal show={handleShowModal} onHide={handleHideModal}>
+      <Modal show={showModal} onHide={handleHideModal}>
         <Modal.Header closeButton>
           <Modal.Title>Checkout</Modal.Title>
         </Modal.Header>
