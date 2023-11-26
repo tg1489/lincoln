@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from './LogoutButton';
 import { useShoppingCart } from 'use-shopping-cart';
@@ -8,6 +8,10 @@ import '../../styles/Profile.css';
 
 export default function Profile() {
   const { user, isAuthenticated } = useAuth0();
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleHideModal = () => setShowModal(false);
 
   // Shopping Cart
   const {
@@ -138,9 +142,13 @@ export default function Profile() {
       </Row>
       <Row>
         <Col>
-          <button>Checkout</button>
+          <Button variant='primary' onClick={handleShowModal}>
+            Checkout
+          </Button>
         </Col>
       </Row>
+
+      {/* <Modal></Modal> */}
     </Container>
   );
 }
