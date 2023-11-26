@@ -148,7 +148,22 @@ export default function Profile() {
         </Col>
       </Row>
 
-      {/* <Modal></Modal> */}
+      <Modal show={handleShowModal} onHide={handleHideModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Checkout</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div>Body of the modal</div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant='secondary' onClick={handleHideModal}>
+            Close
+          </Button>
+          <Button variant='primary' onClick={handleHideModal}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
   );
 }
