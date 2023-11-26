@@ -136,6 +136,11 @@ export default function Profile() {
           })}
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <button>Checkout</button>
+        </Col>
+      </Row>
     </Container>
   );
 }
