@@ -36,30 +36,38 @@ export default function Profile() {
         <Col>
           {isAuthenticated && (
             <article>
-              {user?.picture && <img src={user.picture} alt={'Default pic'} />}
-              <h5>{user?.nickname}</h5>
-              <h5>{user?.email}</h5>
+              {/* Username */}
+              <div className='mb-4'>
+                {user?.picture && (
+                  <img src={user.picture} alt={'Default pic'} />
+                )}
+              </div>
+              {/* Sign Out Button */}
               <LogoutButton />
             </article>
           )}
         </Col>
-
         <Col>
+          {/* Shopping Cart Title */}
           <h5>Shopping Cart</h5>
+          {/* Shopping Cart Subtitle */}
           <h6>You have {cartCount} items in your cart</h6>
           {cartCount === 0 ? (
             ''
           ) : (
             <button onClick={handleClearCart}>Clear Cart</button>
           )}
-
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           {Object.keys(cartData).map((cartId) => {
             const { name, price, image, quantity } = cartData[cartId];
 
             // Below shows saved shopping cart contents
             return (
               <Container key={cartId} className='shopping-cart'>
-                <Row className='shopping-cart-row'>
+                <Row className='shopping-cart-row mb-5 mt-5'>
                   <Col>
                     {' '}
                     <img
