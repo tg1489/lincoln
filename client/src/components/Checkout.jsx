@@ -9,6 +9,14 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
       <Row className='align-items-start'>
         <Col className='checkout-column'>
           <img src={checkoutImage} className='checkout-image' />
+          <span>Checkout</span>
+          <Col className='second-column'>
+            <span>Continue Browsing</span>
+          </Col>
+        </Col>
+
+        <Col>
+          <hr />
         </Col>
       </Row>
     </Container>
