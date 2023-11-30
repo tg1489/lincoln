@@ -74,11 +74,6 @@ export default function Store({ isMobile }) {
   return (
     <div>
       <Container className='store-container'>
-        <Row>
-          <Col>
-            Cart Count: <span className='cart-count'>{cartCount}</span>
-          </Col>
-        </Row>
         <Row className={`membership mt-5 mb-5`}>
           <>
             <Col className='myCol' md={3}>
