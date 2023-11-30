@@ -263,14 +263,32 @@ export default function Header({ isMobile, handlePageChange, currentPage }) {
             isMobile ? (
               <span className='nav-item'>
                 <span className={cartCount === 0 ? '' : 'mobile-cart-bubble'}>
-                  {cartCount === 0 ? <></> : <>{cartCount}</>}
+                  {cartCount === 0 ? (
+                    <></>
+                  ) : (
+                    <span
+                      className='cart-bubble'
+                      onClick={() => handleClick('profile')}
+                    >
+                      {cartCount}
+                    </span>
+                  )}
                 </span>
                 <img src={cart} className='shopping-cart-image mx-2' />
               </span>
             ) : (
               <>
                 <span className={cartCount === 0 ? '' : 'cart-bubble'}>
-                  {cartCount === 0 ? <></> : <>{cartCount}</>}
+                  {cartCount === 0 ? (
+                    <></>
+                  ) : (
+                    <span
+                      className='cart-bubble'
+                      onClick={() => handleClick('profile')}
+                    >
+                      {cartCount}
+                    </span>
+                  )}
                 </span>
                 <img src={cart} className='shopping-cart-image mx-2' />
               </>

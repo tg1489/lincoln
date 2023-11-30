@@ -83,8 +83,10 @@ a {
   color: #fff;
   width: 25px;
   height: 27px;
+  cursor: pointer;
 }
 
 .mobile-cart-bubble {
   color: red;
+  cursor: pointer;
 }
