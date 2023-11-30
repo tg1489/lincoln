@@ -150,9 +150,13 @@ export default function Profile() {
       </Row>
       <Row>
         <Col>
-          <Button variant='primary' onClick={handleShowModal}>
-            Checkout
-          </Button>
+          {cartCount === 0 ? (
+            ''
+          ) : (
+            <Button variant='primary' onClick={handleShowModal}>
+              Checkout
+            </Button>
+          )}
         </Col>
       </Row>
 
