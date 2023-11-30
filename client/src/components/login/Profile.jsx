@@ -6,7 +6,7 @@ import { useShoppingCart } from 'use-shopping-cart';
 import trash from '../../assets/trash.png';
 import '../../styles/Profile.css';
 
-export default function Profile() {
+export default function Profile({ isMobile, currentPage, handlePageChange }) {
   const { user, isAuthenticated } = useAuth0();
   const [showModal, setShowModal] = useState(false);
 
@@ -153,29 +153,15 @@ export default function Profile() {
           {cartCount === 0 ? (
             ''
           ) : (
-            <Button variant='primary' onClick={handleShowModal}>
+            <Button
+              variant='primary'
+              onClick={() => handlePageChange('checkout')}
+            >
               Checkout
             </Button>
           )}
         </Col>
       </Row>
-
-      <Modal show={showModal} onHide={handleHideModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Checkout</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <div>Body of the modal</div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant='secondary' onClick={handleHideModal}>
-            Close
-          </Button>
-          <Button variant='primary' onClick={handleHideModal}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </Container>
   );
 }

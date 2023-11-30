@@ -541,16 +541,6 @@ export default function Store({ isMobile }) {
             </Col>
           </>
         </Row>
-
-        {/* <Modal show={show} onHide={() => setShow(false)}>
-          <Modal.Header closeButton>
-            <Modal.Title>{title}</Modal.Title>
-            <Modal.Body>
-              {paragraph}
-              {price}
-            </Modal.Body>
-          </Modal.Header>
-        </Modal> */}
       </Container>
     </div>
   );

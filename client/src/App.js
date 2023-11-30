@@ -10,6 +10,7 @@ import PTO from './components/PTO';
 import Birthdays from './components/Birthdays';
 import Store from './components/Store';
 import Login from './components/Login';
+import Checkout from './components/Checkout';
 import Profile from './components/login/Profile.jsx';
 import Footer from './components/Footer';
 import { Auth0Provider } from '@auth0/auth0-react';
@@ -81,7 +82,21 @@ function App() {
       case 'login':
         return <Login isMobile={isMobile} />;
       case 'profile':
-        return <Profile isMobile={isMobile} />;
+        return (
+          <Profile
+            isMobile={isMobile}
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        );
+      case 'checkout':
+        return (
+          <Checkout
+            isMobile={isMobile}
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        );
 
       default:
         return <Home isMobile={isMobile} />;
