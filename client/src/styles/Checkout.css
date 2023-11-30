@@ -1,0 +1,14 @@
+.checkout-view {
+  height: 100vh !important;
+}
+
+.align-items-start {
+  /* align-items: flex-start !important; */
+  /* border: 2px solid blue; */
+}
+
+.checkout-column {
+  /* border: 1px solid red; */
+  display: flex !important;
+  align-items: flex-start !important;
+}
