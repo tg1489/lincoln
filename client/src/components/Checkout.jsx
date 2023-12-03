@@ -9,7 +9,7 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
       <Row className='align-items-start'>
         <Col className='checkout-column'>
           <img src={checkoutImage} className='checkout-image' />
-          <span>Checkout</span>
+          <span className='mx-3'>Checkout</span>
           <Col className='second-column'>
             <span>Continue Browsing</span>
           </Col>
@@ -18,6 +18,7 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col>
           <hr />
         </Col>
+        <Col>Body Content?</Col>
       </Row>
     </Container>
   );
