@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import checkoutImage from '../assets/checkout.png';
+import { useShoppingCart } from 'use-shopping-cart';
 import '../styles/Checkout.css';
 
 export default function Checkout({ isMobile, currentPage, handlePageChange }) {
