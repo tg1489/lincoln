@@ -6,6 +6,7 @@ import '../../styles/Profile.css';
 import ShoppingCartTitle from '../ShoppingCartTitle';
 import ShoppingCart from '../ShoppingCart';
 
+
 export default function Profile({ isMobile, currentPage, handlePageChange }) {
   const { user, isAuthenticated } = useAuth0();
 

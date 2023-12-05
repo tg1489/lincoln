@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import checkoutImage from '../assets/checkout.png';
 import { useShoppingCart } from 'use-shopping-cart';
+import ShoppingCart from './ShoppingCart';
 import '../styles/Checkout.css';
 
 export default function Checkout({ isMobile, currentPage, handlePageChange }) {
@@ -19,7 +20,9 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col>
           <hr />
         </Col>
-        <Col>Body Content?</Col>
+        <Col>
+          <ShoppingCart />
+        </Col>
       </Row>
     </Container>
   );
