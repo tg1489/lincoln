@@ -25,7 +25,7 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col>
           <ShoppingCart />
         </Col>
-        <Col>Card Details</Col>
+        <Col className='checkout-card-details'>Card Details</Col>
       </Row>
     </Container>
   );

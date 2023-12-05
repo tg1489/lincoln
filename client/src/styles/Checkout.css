@@ -26,3 +26,7 @@
 .checkout-row {
   flex-direction: row !important;
 }
+
+.checkout-card-details {
+  background-color: #f8f1d9 !important;
+}
