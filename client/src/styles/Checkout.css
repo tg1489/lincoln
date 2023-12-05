@@ -22,3 +22,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.checkout-row {
+  flex-direction: row !important;
+}

@@ -20,9 +20,12 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col>
           <hr />
         </Col>
+      </Row>
+      <Row className='checkout-row'>
         <Col>
           <ShoppingCart />
         </Col>
+        <Col>Card Details</Col>
       </Row>
     </Container>
   );
