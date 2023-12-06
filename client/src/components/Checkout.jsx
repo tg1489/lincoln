@@ -25,7 +25,24 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col>
           <ShoppingCart />
         </Col>
-        <Col className='checkout-card-details'>Card Details</Col>
+        <Col className='checkout-card-details'>
+          <h5>Card Details</h5>
+          <p>Card Type</p>
+          <form class='mt-4'>
+            <div class='form-outline form-white mb-4'>
+              <input
+                type='text'
+                id='typeName'
+                class='form-control form-control-lg'
+                siez='17'
+                placeholder="Cardholder's Name"
+              />
+              <label class='form-label' for='typeName'>
+                Cardholder's Name
+              </label>
+            </div>
+          </form>
+        </Col>
       </Row>
     </Container>
   );
