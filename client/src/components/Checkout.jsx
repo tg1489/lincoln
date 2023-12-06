@@ -34,21 +34,21 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         </Col>
         <Col className='checkout-card-details'>
           <h5>Card Details</h5>
-          <Row>
-            <p>Card Type</p>
-            <a href='#!' type='submit' className='text-white'>
-              <FontAwesomeIcon icon={faCcMastercard} className='fa-2x me-2' />
-            </a>
-            <a href='#!' type='submit' className='text-white'>
-              <FontAwesomeIcon icon={faCcVisa} className='fa-2x me-2' />
-            </a>
-            <a href='#!' type='submit' className='text-white'>
-              <FontAwesomeIcon icon={faCcAmex} className='fa-2x me-2' />
-            </a>
-            <a href='#!' type='submit' className='text-white'>
-              <FontAwesomeIcon icon={faCcPaypal} className='fa-2x' />
-            </a>
-          </Row>
+
+          <p>Card Type</p>
+          <a href='#!' type='submit' className='text-white'>
+            <FontAwesomeIcon icon={faCcMastercard} className='fa-2x me-2' />
+          </a>
+          <a href='#!' type='submit' className='text-white'>
+            <FontAwesomeIcon icon={faCcVisa} className='fa-2x me-2' />
+          </a>
+          <a href='#!' type='submit' className='text-white'>
+            <FontAwesomeIcon icon={faCcAmex} className='fa-2x me-2' />
+          </a>
+          <a href='#!' type='submit' className='text-white'>
+            <FontAwesomeIcon icon={faCcPaypal} className='fa-2x' />
+          </a>
+
           <form class='mt-4'>
             <div class='form-outline form-white mb-4'>
               <input
