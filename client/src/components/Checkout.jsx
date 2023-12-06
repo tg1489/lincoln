@@ -2,6 +2,13 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import checkoutImage from '../assets/checkout.png';
 import { useShoppingCart } from 'use-shopping-cart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faCcMastercard,
+  faCcVisa,
+  faCcAmex,
+  faCcPaypal,
+} from '@fortawesome/free-brands-svg-icons';
 import ShoppingCart from './ShoppingCart';
 import '../styles/Checkout.css';
 
@@ -28,10 +35,10 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col className='checkout-card-details'>
           <h5>Card Details</h5>
           <p>Card Type</p>
-
-          <a href='#!' type='submit' class='text-white'>
-            <i class='fab fa-cc-mastercard fa-2x me-2'></i>
+          <a href='#!' type='submit' className='text-white'>
+            <FontAwesomeIcon icon={faCcMastercard} className='fa-2x me-2' />
           </a>
+
           <a href='#!' type='submit' class='text-white'>
             <i class='fab fa-cc-visa fa-2x me-2'></i>
           </a>
@@ -41,7 +48,6 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
           <a href='#!' type='submit' class='text-white'>
             <i class='fab fa-cc-paypal fa-2x'></i>
           </a>
-
           <form class='mt-4'>
             <div class='form-outline form-white mb-4'>
               <input
