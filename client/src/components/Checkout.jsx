@@ -28,6 +28,20 @@ export default function Checkout({ isMobile, currentPage, handlePageChange }) {
         <Col className='checkout-card-details'>
           <h5>Card Details</h5>
           <p>Card Type</p>
+
+          <a href='#!' type='submit' class='text-white'>
+            <i class='fab fa-cc-mastercard fa-2x me-2'></i>
+          </a>
+          <a href='#!' type='submit' class='text-white'>
+            <i class='fab fa-cc-visa fa-2x me-2'></i>
+          </a>
+          <a href='#!' type='submit' class='text-white'>
+            <i class='fab fa-cc-amex fa-2x me-2'></i>
+          </a>
+          <a href='#!' type='submit' class='text-white'>
+            <i class='fab fa-cc-paypal fa-2x'></i>
+          </a>
+
           <form class='mt-4'>
             <div class='form-outline form-white mb-4'>
               <input
